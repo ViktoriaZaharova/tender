@@ -1,0 +1,596 @@
+@import "fonts"
+@import "vars"
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+*::-webkit-input-placeholder
+  color: #666
+  opacity: 1
+
+*:-moz-placeholder
+  color: #666
+  opacity: 1
+
+*::-moz-placeholder
+  color: #666
+  opacity: 1
+
+*:-ms-input-placeholder
+  color: #666
+  opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+  color: #666
+
+body input:required:valid,
+body textarea:required:valid
+  color: #666
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+  content: ''
+  content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: normal
+  font-family: $default-font
+  overflow-x: hidden
+  overflow-y: scroll
+
+html
+  display: block
+
+html, body
+  min-height: 100%
+
+img
+  display: block
+  max-width: 100%
+  height: auto
+
+.text-center
+  text-align: center
+
+a
+  display: block
+  transition: .3s ease
+  text-decoration: none
+  outline: none
+  box-sizing: border-box
+  &:hover
+    text-decoration: none
+
+button
+  outline: none
+  background: transparent
+  border: none
+  padding: 0
+  margin: 0
+  box-sizing: border-box
+  cursor: pointer
+
+label
+  display: block
+
+input
+  width: 100%
+  height: 36px
+  box-sizing: border-box
+  outline: none
+  border: 2px solid #E3E4E8
+    radius: 5px
+  box-shadow: none
+  font-family: $default-font
+  font-size: 15px
+  color: #9D9D9D
+  padding: 0 9px
+  &::placeholder
+    color: #9D9D9D
+
+h1
+  color: #262626
+  width: 100%
+  font-size: 24px
+
+.btn
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  color: #FFFFFF
+  font-weight: bold
+  height: 58px
+
+.br-5
+  border-radius: 5px
+
+.btn-green
+  background: #8CC152
+  &:hover
+    background: #709942
+
+.btn-grey
+  background: #7B7B7B
+  &:hover
+    background: #6e6e6e
+
+.btn-group
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  .btn
+    margin: 0 17px 0 0
+    &:last-child
+      margin: 0
+
+.color-red
+  color: #A52417
+
+.wrapper
+  width: 100%
+  height: 100%
+  display: flex
+  justify-content: space-between
+
+.sidebar-left
+  background: #A52417
+  position: fixed
+  height: 100vh
+  z-index: 10
+  top: 0
+  left: 0
+  transition: all 0.24s ease-in-out
+
+.navigation
+  height: 100%
+  text-align: center
+  width: 79px
+  .nav-item
+    cursor: pointer
+    border:
+      bottom: 1px solid rgba(248, 249, 250, 0.05)
+    width: 100%
+    display: block
+    position: relative
+    height: 65px
+  .active
+    border:
+      left: 3px solid #fff
+
+.nav-links
+  width: 100%
+  height: 100%
+  display: block
+  fill: #fff
+  padding: 13px 0
+  svg
+    width: 100%
+    height: 100%
+    max-width: 42px
+
+.sidebar-left-secondary
+  left: 79px
+  height: 100vh
+  position: fixed
+  top: 0
+  z-index: 10
+  background: #fff
+  transition: all 0.24s ease-in-out
+  width: 225px
+  padding: 26px 0
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.09)
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+
+.submenu-area
+  display: none
+
+.submenu-area__top
+  padding: 0 18px 17px 23px
+
+.submenu-area__title
+  color: #525252
+  font-weight: bold
+  text-transform: uppercase
+  line-height: 23px
+  margin: 0 0 10px
+
+.submenu-area__description
+  color: #717171
+  font-size: 11px
+  line-height: 13px
+
+.submenu-area__menu
+  width: 100%
+  .nav-links
+    width: 100%
+    display: flex
+    align-items: center
+    padding: 13px 25px
+    color: #717171
+    font-size: 13px
+    .icon
+      width: 20px
+      height: 20px
+      display: flex
+      align-items: center
+      justify-content: center
+      margin: 0 8px 0 0
+    &:hover
+      background: #EEEEEE
+  .open
+    background: #EEEEEE
+
+.submenu-area__bottom
+  margin: 13px 0 0 0
+  padding: 22px 5px 22px 22px
+  border-top: 3px solid #EEEEEE
+
+.box-contacts
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  margin: auto 0 0 0
+  padding: 0 24px
+  color: #717171
+  font-size: 10px
+
+.phone
+  font-weight: bold
+  color: #A52417
+  font-size: 20px
+
+.mail
+  margin: 4px 0 0 0
+  color: #717171
+  font-size: 10px
+
+.links-doc
+  display: flex
+  align-items: center
+  color: #717171
+  font-size: 10px
+  margin: 0 0 14px
+  &:last-child
+    margin: 0
+  &__icon
+    min-width: 22px
+    width: 22px
+    height: 22px
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 6px 0 0
+  &:hover
+    color: #A52417
+
+//content-wrapper
+.wrapper.sidenav-open .content-wrapper
+  width: calc(100% - 79px - 225px)
+
+.wrapper.sidenav-open .sidebar-left
+  left: 0
+
+.wrapper.sidenav-open .sidebar-left-secondary
+  left: 79px
+
+[dir="rtl"] .wrapper.sidenav-open .sidebar-left-secondary
+  right: 79px
+
+.wrapper .sidebar-left
+  left: calc(-79px - 20px)
+
+.wrapper .sidebar-left-secondary
+  left: calc(-225px - 20px)
+
+
+.content-wrapper
+  width: 100%
+  min-height: 100%
+  padding: 30px 20px 86px
+  transition: all 0.24s ease-in-out
+  display: flex
+  flex-direction: column
+
+//header
+.menu-toggle
+  display: flex
+  flex-direction: column
+  align-items: center
+  cursor: pointer
+  width: 34px
+  div
+    display: block
+    width: 100%
+    height: 2px
+    background: #000
+    margin: 0 0 8px
+    border-radius: 3px
+    &:last-child
+      margin: 0
+
+header
+  width: 100%
+  margin: 0 0 48px
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+
+.header-menu
+  margin: 0 0 0 57px
+  display: flex
+  align-items: center
+  li
+    margin: 0 40px 0 0
+    &:last-child
+      margin: 0
+    a
+      color: #717171
+      font-size: 15px
+      &:hover
+        color: #000
+
+.box-admin
+  display: flex
+  align-items: center
+  margin: 0 0 0 auto
+  font-size: 12px
+  color: #8B8B8B
+  span
+    margin: 0 0 0 3px
+
+.title-line
+  width: 100%
+  padding: 0 0 19px
+  margin: 0 0 13px
+  border-bottom: 1px solid #717171
+
+//filter-wrapper
+.filter-wrapper
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  h3
+    width: 100%
+    margin: 0 0 11px
+    color: #ABADB3
+    text-transform: uppercase
+    font-size: 15px
+    font-weight: bold
+
+.form-search
+  width: 100%
+  position: relative
+  margin: 0 0 22px
+  label
+    width: 100%
+    input
+      padding: 0 30px 0 9px
+
+  button
+    position: absolute
+    z-index: 1
+    width: 24px
+    height: 24px
+    display: flex
+    align-items: center
+    justify-content: center
+    right: 10px
+    bottom: 6px
+    svg
+      width: 100%
+      height: 100%
+
+.tender-box
+  width: 100%
+  color: #7B7B7B
+  font-weight: bold
+  height: 121px
+
+  border:
+    top: 1px solid #717171
+  &:last-child
+    border:
+      bottom: 1px solid #717171
+  .btn-copy
+    margin: 0 0 0 auto
+  td
+    vertical-align: middle
+  a
+    color: #7B7B7B
+    &:hover
+      color: #000
+
+.tender-box__number
+  padding: 0 0 0 7px
+
+.btn-copy
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 30px
+  height: 30px
+  svg
+    width: 100%
+    height: 100%
+
+.pagination
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  margin: 34px 0 0 0
+  li
+    margin: 0 13px 0 0
+    &:first-child, &:last-child
+      a
+        background: transparent
+        border: 2px solid #C9C9C9
+          radius: 50px
+        width: 107px
+        height: 44px
+        color: #7B7B7B
+        font-size: 15px
+    &:last-child
+      margin: 0
+    a
+      display: flex
+      align-items: center
+      justify-content: center
+      background: #C9C9C9
+      border-radius: 50%
+      text-align: center
+      width: 44px
+      height: 44px
+      color: #FFFFFF
+      font-size: 20px
+    .active
+      background: #A52417
+
+.sidebar-close
+  display: none
+  align-items: center
+  justify-content: center
+  width: 50px
+  height: 50px
+  padding: 0 16px 16px
+  margin: 0 0 0 auto
+  cursor: pointer
+
+.table-responsive
+  overflow-x: auto
+  overflow-y: hidden
+  width: 100%
+  display: block
+  -webkit-overflow-scrolling: touch
+
+.table
+  width: 100%
+
+//add tender page
+.form-tender
+  margin: 23px 0 19px
+  label
+    margin: 0 0 19px
+
+.form-group__title
+  margin: 0 0 14px
+  font-weight: bold
+  display: block
+  width: 100%
+
+.form-wrapper
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  justify-content: space-between
+  label
+    max-width: 145px
+    width: 100%
+  .label-max
+    max-width: 630px
+
+.add-tender__content
+  .btn-group
+
+    .btn
+      width: 141px
+
+.table-add-tender
+  margin: 0 0 30px
+  border-radius: 5px
+  overflow: hidden
+  thead
+    text-align: left
+    font-size: 12px
+    font-weight: bold
+    color: #fff
+    background: #A2ABBA
+    .btn-group
+      display: flex
+      flex-direction: row
+      justify-content: flex-end
+      flex-wrap: nowrap
+      padding: 0
+      .btn-delete
+        width: 70px
+        height: 54px
+      .btn-green
+        width: 183px
+        height: 54px
+        margin: 0
+    tr
+      width: 100%
+      th
+        vertical-align: middle
+        padding: 9px 10px
+        h3
+          font-size: 16px
+  tbody
+    border-bottom: 3px solid #E3E4E8
+    color: #A4A9AE
+    font-size: 12px
+    line-height: 21px
+    tr
+      &:nth-child(even)
+        background: #F6F8FA
+      td
+        padding: 19px 11px
+
+.thead-tr__first
+  box-shadow: 0 3px 0 #7B8493
+
+.thead-tr__last
+  border-bottom: 2px solid #93999E
+
+.btn-delete
+  background: #A52417
+  height: 54px
+  width: 70px
+  display: flex
+  align-items: center
+  justify-content: center
+
+.icon-delete
+  width: 27px
+  height: 27px
+
+
+
+@import "media"
+// Всегда в конце
