@@ -37,7 +37,7 @@
                         </svg>
                     </a>
                 </li>
-                <li class="nav-item active" data-item="pig">
+                <li class="nav-item" data-item="pig">
                     <a href="#" class="nav-links">
                         <svg>
                             <use xlink:href="img/sprite.svg#pig"></use>
@@ -45,7 +45,7 @@
                     </a>
                 </li>
 
-                <li class="nav-item" data-item="law">
+                <li class="nav-item active" data-item="law">
                     <a href="#" class="nav-links">
                         <svg>
                             <use xlink:href="img/sprite.svg#law"></use>
@@ -498,7 +498,7 @@
         </div>
     </div>
 
-    <div class="content-wrapper">
+    <div class="content-wrapper content-wrapper__auction">
         <header>
             <div class="menu-toggle">
                 <div></div>
@@ -517,183 +517,153 @@
             </div>
         </header>
 
-        <div class="main-content active-tender">
+        <div class="main-content auction upcoming-tender">
             <div class="title-line">
-                <h1>Активные тендеры</h1>
+                <h1>Аукцион №11</h1>
+
+                <a href="#" class="btn btn-red br-5">Посмотреть клиентов на странице</a>
             </div>
 
-            <div class="filter-wrapper">
-                <h3>ФИЛЬТР</h3>
-                <form class="form-search">
-                    <label><input type="text" placeholder="Поиск по тендерам" required></label>
-                    <button type="submit">
-                        <svg class="icon-search">
-                            <use xlink:href="img/sprite.svg#loupe"></use>
-                        </svg>
-                    </button>
-                </form>
+            <div class="auction-wrapper">
+                <div class="auction-wrapper__box auction-wrapper__box-one">
+                    <div class="description-tender__content">
+                        <div class="description-tender__box w-100">
+                            <h4>Наименование:</h4>
+                            <p>17.01 Технологический отход свиней (СВИНОМАТКИ) 60 голов Западная зона - 1 машина</p>
+                        </div>
+                        <div class="description-tender__box w-100">
+                            <h4>Описание:</h4>
+                            <p>Площадки: Вязовое (30 гол.), Долгое (30 гол.),</p>
+                            <p>Кол-во: 60 гол</p>
+                            <p>Доставка: самовывоз (24.01.2020)</p>
+                        </div>
+                        <div class="description-tender__box w-100">
+                            <h4>Дата и время начала:</h4>
+                            <p>17.01.2020 10:55:00</p>
+                        </div>
+                        <div class="description-tender__box w-100">
+                            <h4>Начальная цена:</h4>
+                            <p>140 руб.</p>
+                        </div>
+
+                        <div class="description-tender__box w-100 current-rate">
+                            <h4>Текущая ставка:</h4>
+                            <p>165 руб.</p>
+                        </div>
+
+                        <div class="description-tender__box timer-wrapper">
+                            <h4>До начала аукциона осталось:</h4>
+
+                            <div class="timer">
+                                <div class="timer-box">
+                                    <div class="days timer-box__val"></div>
+                                    <div class="timer-box__text">дней</div>
+                                </div>
+
+                                <div class="timer-box">
+                                    <div class="hours timer-box__val"></div>
+                                    <div class="timer-box__text">часов</div>
+                                </div>
+
+                                <div class="timer-box">
+                                    <div class="minutes timer-box__val"></div>
+                                    <div class="timer-box__text">минут</div>
+                                </div>
+
+                                <div class="timer-box">
+                                    <div class="seconds timer-box__val"></div>
+                                    <div class="timer-box__text">секунд</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="btn-group">
+                        <a href="#" class="btn btn-green br-5">ПОДНЯТЬ СТАВКУ НА 0,5 РУБ</a>
+
+                    </div>
+
+                    <div class="explanation">В текущем аукционе шаг ставки составляет 50 копеек</div>
+                </div>
+
+                <div class="auction-wrapper__box bg-grey auction-wrapper__box-two">
+                    <div class="description-tender__content">
+                        <div class="description-tender__box">
+                            <h4>Участников аукциона:</h4>
+                            <p>4</p>
+                        </div>
+
+                        <div class="description-tender__box">
+                            <h4>Количество ставок:</h4>
+                            <p>10</p>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table-tender table">
+                            <thead>
+                                <tr>
+                                    <th>Участник аукциона</th>
+                                    <th>Размер ставки</th>
+                                    <th>Время ставки</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <p>ООО “Корпорация развитие и другие”</p>
+                                    <p>589987456</p>
+                                </td>
+                                <td>140,5 руб.</td>
+                                <td>10.01.2020. 15:03:01</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>ООО “Корпорация развитие и другие”</p>
+                                    <p>589987456</p>
+                                </td>
+                                <td>140,5 руб.</td>
+                                <td>10.01.2020. 15:03:01</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>ООО “Корпорация развитие и другие”</p>
+                                    <p>589987456</p>
+                                </td>
+                                <td>140,5 руб.</td>
+                                <td>10.01.2020. 15:03:01</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>ООО “Корпорация развитие и другие”</p>
+                                    <p>589987456</p>
+                                </td>
+                                <td>140,5 руб.</td>
+                                <td>10.01.2020. 15:03:01</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>ООО “Корпорация развитие и другие”</p>
+                                    <p>589987456</p>
+                                </td>
+                                <td>140,5 руб.</td>
+                                <td>10.01.2020. 15:03:01</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>ООО “Корпорация развитие и другие”</p>
+                                    <p>589987456</p>
+                                </td>
+                                <td>140,5 руб.</td>
+                                <td>10.01.2020. 15:03:01</td>
+                            </tr>
+                            </tbody>
+
+                        </table>
+                    </div>
+                </div>
             </div>
 
-            <div class="table-responsive">
-                <table class="table-tender table">
-                    <tbody>
-                        <tr class="tender-box">
-                            <td class="tender-box__number color-red">
-                                <p>№1/17</p>
-                            </td>
-                            <td class="tender-box__name">
-                                <a href="#">
-                                    Еженедельный тендер 02.06.2020 - 08.06.2020 Мясная продукция
-                                </a>
-                            </td>
-                            <td class="tender-box__status">
-                                <p>Прием заявок до: 30.01.2021 | 15:23</p>
-                            </td>
-                            <td>
-                                <a href="#" class="btn-copy">
-                                    <svg class="icon-copy">
-                                        <use xlink:href="img/sprite.svg#copy"></use>
-                                    </svg>
-                                </a>
-                            </td>
-                        </tr>
 
-                        <tr class="tender-box">
-                            <td class="tender-box__number color-red">
-                                <p>№1/17</p>
-                            </td>
-                            <td class="tender-box__name">
-                                <a href="#">
-                                    Еженедельный тендер 02.06.2020 - 08.06.2020 Мясная продукция
-                                </a>
-                            </td>
-                            <td class="tender-box__status">
-                                <p>Прием заявок до: 30.01.2021 | 15:23</p>
-                            </td>
-                            <td>
-                                <a href="#" class="btn-copy">
-                                    <svg class="icon-copy">
-                                        <use xlink:href="img/sprite.svg#copy"></use>
-                                    </svg>
-                                </a>
-                            </td>
-                        </tr>
-
-                        <tr class="tender-box">
-                            <td class="tender-box__number color-red">
-                                <p>№1/17</p>
-                            </td>
-                            <td class="tender-box__name">
-                                <a href="#">
-                                    Еженедельный тендер 02.06.2020 - 08.06.2020 Мясная продукция
-                                </a>
-                            </td>
-                            <td class="tender-box__status">
-                                <p>Прием заявок до: 30.01.2021 | 15:23</p>
-                            </td>
-                            <td>
-                                <a href="#" class="btn-copy">
-                                    <svg class="icon-copy">
-                                        <use xlink:href="img/sprite.svg#copy"></use>
-                                    </svg>
-                                </a>
-                            </td>
-                        </tr>
-
-                        <tr class="tender-box">
-                            <td class="tender-box__number color-red">
-                                <p>№1/17</p>
-                            </td>
-                            <td class="tender-box__name">
-                                <a href="#">
-                                    Еженедельный тендер 02.06.2020 - 08.06.2020 Мясная продукция
-                                </a>
-                            </td>
-                            <td class="tender-box__status">
-                                <p>Прием заявок до: 30.01.2021 | 15:23</p>
-                            </td>
-                            <td>
-                                <a href="#" class="btn-copy">
-                                    <svg class="icon-copy">
-                                        <use xlink:href="img/sprite.svg#copy"></use>
-                                    </svg>
-                                </a>
-                            </td>
-                        </tr>
-
-                        <tr class="tender-box">
-                            <td class="tender-box__number color-red">
-                                <p>№1/17</p>
-                            </td>
-                            <td class="tender-box__name">
-                                <a href="#">
-                                    Еженедельный тендер 02.06.2020 - 08.06.2020 Мясная продукция
-                                </a>
-                            </td>
-                            <td class="tender-box__status">
-                                <p>Прием заявок до: 30.01.2021 | 15:23</p>
-                            </td>
-                            <td>
-                                <a href="#" class="btn-copy">
-                                    <svg class="icon-copy">
-                                        <use xlink:href="img/sprite.svg#copy"></use>
-                                    </svg>
-                                </a>
-                            </td>
-                        </tr>
-
-                        <tr class="tender-box">
-                            <td class="tender-box__number color-red">
-                                <p>№1/17</p>
-                            </td>
-                            <td class="tender-box__name">
-                                <a href="#">
-                                    Еженедельный тендер 02.06.2020 - 08.06.2020 Мясная продукция
-                                </a>
-                            </td>
-                            <td class="tender-box__status">
-                                <p>Прием заявок до: 30.01.2021 | 15:23</p>
-                            </td>
-                            <td>
-                                <a href="#" class="btn-copy">
-                                    <svg class="icon-copy">
-                                        <use xlink:href="img/sprite.svg#copy"></use>
-                                    </svg>
-                                </a>
-                            </td>
-                        </tr>
-
-                        <tr class="tender-box">
-                            <td class="tender-box__number color-red">
-                                <p>№1/17</p>
-                            </td>
-                            <td class="tender-box__name">
-                                <a href="#">
-                                    Еженедельный тендер 02.06.2020 - 08.06.2020 Мясная продукция
-                                </a>
-                            </td>
-                            <td class="tender-box__status">
-                                <p>Прием заявок до: 30.01.2021 | 15:23</p>
-                            </td>
-                            <td>
-                                <a href="#" class="btn-copy">
-                                    <svg class="icon-copy">
-                                        <use xlink:href="img/sprite.svg#copy"></use>
-                                    </svg>
-                                </a>
-                            </td>
-                        </tr>
-                    </tbody>
-
-                </table>
-            </div>
-
-            <ul class="pagination">
-                <li><a href="#">Назад</a></li>
-                <li><a href="#" class="active">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">Вперед</a></li>
-            </ul>
         </div>
     </div>
 </div>

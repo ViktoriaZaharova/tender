@@ -11,7 +11,6 @@ window.gullUtils = {
 
 // Perfect scrollbar
 $(document).ready(function () {
-    "use strict";
     $(".perfect-scrollbar, [data-perfect-scrollbar]").each(function (index) {
         var $el = $(this);
         var ps = new PerfectScrollbar(this, {
@@ -21,84 +20,6 @@ $(document).ready(function () {
     });
 });
 
-// menu sidebar
-$(document).ready(function () {
-    "use strict";
-
-    var $appAdminWrap = $(".wrapper");
-    var $sidebarToggle = $appAdminWrap.find(".menu-toggle");
-    var $sidebarLeft = $appAdminWrap.find(".sidebar-left");
-    var $sidebarLeftSecondary = $appAdminWrap.find(".sidebar-left-secondary");
-    var $sideNavItem = $appAdminWrap.find(".nav-item");
-
-    function navItemToggleActive($activeItem) {
-        var $navItem = $(".nav-item");
-        $navItem.removeClass("active");
-        $activeItem.addClass("active");
-    }
-
-    function initLayout() {
-        var pageName = location.pathname.split('/').find(function (s) {
-            return s.includes('.html');
-        }); // Makes secondary menu selected on page load
-
-        $sideNavItem.each(function (index) {
-            var $item = $(this);
-            var dataItem = $item.data("item");
-            var secondaryItems = $sidebarLeftSecondary.find("[data-parent=\"".concat(dataItem, "\"]")); // add active class if HTML page
-
-            if (pageName) {
-                $item.removeClass("active");
-                var $childItem = secondaryItems.find('a[href="' + pageName + '"]');
-                $childItem.length ? $item.addClass("active") : null;
-                $childItem.length ? $childItem.addClass("open") : null; // console.log($childItem.length ? $childItem : '');
-            }
-
-            if ($item.hasClass("active")) {
-                // console.log(dataItem);
-                $sidebarLeftSecondary.find("[data-parent=\"".concat(dataItem, "\"]")).show();
-            }
-        });
-
-        if (gullUtils.isMobile()) {
-            $appAdminWrap.removeClass("sidenav-open");
-        }
-    }
-
-    $(window).on("resize", function (event) {
-        if (gullUtils.isMobile()) {
-            $appAdminWrap.removeClass("sidenav-open");
-        }
-    });
-    initLayout(); // Show Secondary menu area on hover on side menu item;
-
-    $sidebarLeft.find(".nav-item").on("mouseenter", function (event) {
-        var $navItem = $(event.currentTarget);
-        var dataItem = $navItem.data("item");
-
-        if (dataItem) {
-            navItemToggleActive($navItem);
-            $sidebarLeftSecondary.find(".submenu-area").hide();
-            $sidebarLeftSecondary.find("[data-parent=\"".concat(dataItem, "\"]")).show();
-        }
-    }); // Prevent opeing link if has data-item
-
-    $sidebarLeft.find(".nav-item").on("click", function (e) {
-        var $navItem = $(event.currentTarget);
-        var dataItem = $navItem.data("item");
-
-        if (dataItem) {
-            e.preventDefault();
-        }
-    }); // Toggle menus on click on header toggle icon
-
-    $sidebarToggle.on("click", function (event) {
-        $appAdminWrap.toggleClass("sidenav-open");
-    });
-    $('.sidebar-close').on('click', function (e) {
-        $appAdminWrap.removeClass("sidenav-open");
-    });
-});
 
 // calendar date
 $( function() {
@@ -154,4 +75,31 @@ $( function() {
     }
 } );
 
+// timer
+function makeTimer() {
 
+    var endTime = new Date("11 February 2021 00:00:00 GMT+01:00");
+    endTime = (Date.parse(endTime) / 1000);
+
+    var now = new Date();
+    now = (Date.parse(now) / 1000);
+
+    var timeLeft = endTime - now;
+
+    var days = Math.floor(timeLeft / 86400);
+    var hours = Math.floor((timeLeft - (days * 86400)) / 3600);
+    var minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600 )) / 60);
+    var seconds = Math.floor((timeLeft - (days * 86400) - (hours * 3600) - (minutes * 60)));
+
+    if (hours < "10") { hours = "0" + hours; }
+    if (minutes < "10") { minutes = "0" + minutes; }
+    if (seconds < "10") { seconds = "0" + seconds; }
+
+    $(".days").html(days);
+    $(".hours").html(hours);
+    $(".minutes").html(minutes);
+    $(".seconds").html(seconds);
+
+}
+
+setInterval(function() { makeTimer(); }, 1000);

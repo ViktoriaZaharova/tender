@@ -13,10 +13,30 @@
     max-width: none
     order: 1
 
+  .tender-box__name
+    padding: 0 9px
+
+  .auction .btn-group .btn
+    width: 260px
+
 
 @media only screen and (max-width : 1280px)
   .table-add-tender tbody tr td
     white-space: nowrap
+
+@media only screen and (max-width : 1199px)
+  .description-tender__box, .col
+    width: 30%
+
+  .timer-wrapper
+    width: 100%
+
+  .auction .btn-group .btn
+    margin: 0 20px 10px 0
+    &:last-child
+      margin: 0 0 10px
+
+
 
 @media only screen and (max-width : 1100px)
   .table-add-tender tbody tr td
@@ -44,6 +64,15 @@
     div
       margin: 0 0 4px
 
+  .description-tender__box, .col
+    width: 50%
+
+  .auction-wrapper .auction-wrapper__box
+    width: 100%
+
+  .auction-wrapper__box-one
+    margin: 0 0 40px
+
 @media only screen and (max-width : 767px)
   .sidebar-close
     display: flex
@@ -56,6 +85,10 @@
       padding: 0 5px
 
 
+@media only screen and (max-width : 640px)
+  .upcoming-tender .title-line .btn
+    width: 280px
+
 @media only screen and (max-width : 576px)
   .tender-box__name
     min-width: 200px
@@ -66,6 +99,12 @@
   .tender-box__number
     min-width: 80px
 
+  h1, .subtitle
+    width: 100%
+
+  .upcoming-tender .title-line .btn
+    margin: 10px auto 0
+
 @media only screen and (max-width : 480px)
   .box-admin
     flex-direction: column
@@ -75,8 +114,12 @@
     margin: 0 0 30px
 
 
-  h1
+  h1, .subtitle, .current-rate p
     font-size: 22px
+
+  .description-tender__box, .col
+    width: 100%
+    padding: 0
 
 @media only screen and (max-width : 420px)
   .header-menu
@@ -107,3 +150,9 @@
 
   .btn
     height: 50px
+
+  .timer-box__val
+    font-size: 28px
+
+  .timer-box:before
+    font-size: 28px

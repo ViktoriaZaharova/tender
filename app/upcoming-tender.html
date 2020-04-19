@@ -37,7 +37,7 @@
                         </svg>
                     </a>
                 </li>
-                <li class="nav-item active" data-item="pig">
+                <li class="nav-item" data-item="pig">
                     <a href="#" class="nav-links">
                         <svg>
                             <use xlink:href="img/sprite.svg#pig"></use>
@@ -45,7 +45,7 @@
                     </a>
                 </li>
 
-                <li class="nav-item" data-item="law">
+                <li class="nav-item active" data-item="law">
                     <a href="#" class="nav-links">
                         <svg>
                             <use xlink:href="img/sprite.svg#law"></use>
@@ -517,25 +517,23 @@
             </div>
         </header>
 
-        <div class="main-content active-tender">
+        <div class="main-content upcoming-tender">
             <div class="title-line">
-                <h1>Активные тендеры</h1>
+                <h1>Предстоящие аукционы</h1>
+
+                <a href="#" class="btn btn-red br-5">Посмотреть клиентов на странице</a>
             </div>
 
-            <div class="filter-wrapper">
-                <h3>ФИЛЬТР</h3>
-                <form class="form-search">
-                    <label><input type="text" placeholder="Поиск по тендерам" required></label>
-                    <button type="submit">
-                        <svg class="icon-search">
-                            <use xlink:href="img/sprite.svg#loupe"></use>
-                        </svg>
-                    </button>
-                </form>
-            </div>
 
             <div class="table-responsive">
                 <table class="table-tender table">
+                    <thead>
+                        <tr>
+                            <th>Номер</th>
+                            <th>Наименование</th>
+                            <th>До начала аукциона</th>
+                        </tr>
+                    </thead>
                     <tbody>
                         <tr class="tender-box">
                             <td class="tender-box__number color-red">
@@ -543,11 +541,31 @@
                             </td>
                             <td class="tender-box__name">
                                 <a href="#">
-                                    Еженедельный тендер 02.06.2020 - 08.06.2020 Мясная продукция
+                                    17.01 Технологический отход свиней (СВИНОМАТКИ) 48 голов Восточная зона - 1 машина
                                 </a>
                             </td>
                             <td class="tender-box__status">
-                                <p>Прием заявок до: 30.01.2021 | 15:23</p>
+                                <div class="timer">
+                                    <div class="timer-box">
+                                        <div class="days timer-box__val"></div>
+                                        <div class="timer-box__text">дней</div>
+                                    </div>
+
+                                    <div class="timer-box">
+                                        <div class="hours timer-box__val"></div>
+                                        <div class="timer-box__text">часов</div>
+                                    </div>
+
+                                    <div class="timer-box">
+                                        <div class="minutes timer-box__val"></div>
+                                        <div class="timer-box__text">минут</div>
+                                    </div>
+
+                                    <div class="timer-box">
+                                        <div class="seconds timer-box__val"></div>
+                                        <div class="timer-box__text">секунд</div>
+                                    </div>
+                                </div>
                             </td>
                             <td>
                                 <a href="#" class="btn-copy">
@@ -557,123 +575,37 @@
                                 </a>
                             </td>
                         </tr>
-
                         <tr class="tender-box">
                             <td class="tender-box__number color-red">
                                 <p>№1/17</p>
                             </td>
                             <td class="tender-box__name">
                                 <a href="#">
-                                    Еженедельный тендер 02.06.2020 - 08.06.2020 Мясная продукция
+                                    17.01 Технологический отход свиней (СВИНОМАТКИ) 48 голов Восточная зона - 1 машина
                                 </a>
                             </td>
                             <td class="tender-box__status">
-                                <p>Прием заявок до: 30.01.2021 | 15:23</p>
-                            </td>
-                            <td>
-                                <a href="#" class="btn-copy">
-                                    <svg class="icon-copy">
-                                        <use xlink:href="img/sprite.svg#copy"></use>
-                                    </svg>
-                                </a>
-                            </td>
-                        </tr>
+                                <div class="timer">
+                                    <div class="timer-box">
+                                        <div class="days timer-box__val"></div>
+                                        <div class="timer-box__text">дней</div>
+                                    </div>
 
-                        <tr class="tender-box">
-                            <td class="tender-box__number color-red">
-                                <p>№1/17</p>
-                            </td>
-                            <td class="tender-box__name">
-                                <a href="#">
-                                    Еженедельный тендер 02.06.2020 - 08.06.2020 Мясная продукция
-                                </a>
-                            </td>
-                            <td class="tender-box__status">
-                                <p>Прием заявок до: 30.01.2021 | 15:23</p>
-                            </td>
-                            <td>
-                                <a href="#" class="btn-copy">
-                                    <svg class="icon-copy">
-                                        <use xlink:href="img/sprite.svg#copy"></use>
-                                    </svg>
-                                </a>
-                            </td>
-                        </tr>
+                                    <div class="timer-box">
+                                        <div class="hours timer-box__val"></div>
+                                        <div class="timer-box__text">часов</div>
+                                    </div>
 
-                        <tr class="tender-box">
-                            <td class="tender-box__number color-red">
-                                <p>№1/17</p>
-                            </td>
-                            <td class="tender-box__name">
-                                <a href="#">
-                                    Еженедельный тендер 02.06.2020 - 08.06.2020 Мясная продукция
-                                </a>
-                            </td>
-                            <td class="tender-box__status">
-                                <p>Прием заявок до: 30.01.2021 | 15:23</p>
-                            </td>
-                            <td>
-                                <a href="#" class="btn-copy">
-                                    <svg class="icon-copy">
-                                        <use xlink:href="img/sprite.svg#copy"></use>
-                                    </svg>
-                                </a>
-                            </td>
-                        </tr>
+                                    <div class="timer-box">
+                                        <div class="minutes timer-box__val"></div>
+                                        <div class="timer-box__text">минут</div>
+                                    </div>
 
-                        <tr class="tender-box">
-                            <td class="tender-box__number color-red">
-                                <p>№1/17</p>
-                            </td>
-                            <td class="tender-box__name">
-                                <a href="#">
-                                    Еженедельный тендер 02.06.2020 - 08.06.2020 Мясная продукция
-                                </a>
-                            </td>
-                            <td class="tender-box__status">
-                                <p>Прием заявок до: 30.01.2021 | 15:23</p>
-                            </td>
-                            <td>
-                                <a href="#" class="btn-copy">
-                                    <svg class="icon-copy">
-                                        <use xlink:href="img/sprite.svg#copy"></use>
-                                    </svg>
-                                </a>
-                            </td>
-                        </tr>
-
-                        <tr class="tender-box">
-                            <td class="tender-box__number color-red">
-                                <p>№1/17</p>
-                            </td>
-                            <td class="tender-box__name">
-                                <a href="#">
-                                    Еженедельный тендер 02.06.2020 - 08.06.2020 Мясная продукция
-                                </a>
-                            </td>
-                            <td class="tender-box__status">
-                                <p>Прием заявок до: 30.01.2021 | 15:23</p>
-                            </td>
-                            <td>
-                                <a href="#" class="btn-copy">
-                                    <svg class="icon-copy">
-                                        <use xlink:href="img/sprite.svg#copy"></use>
-                                    </svg>
-                                </a>
-                            </td>
-                        </tr>
-
-                        <tr class="tender-box">
-                            <td class="tender-box__number color-red">
-                                <p>№1/17</p>
-                            </td>
-                            <td class="tender-box__name">
-                                <a href="#">
-                                    Еженедельный тендер 02.06.2020 - 08.06.2020 Мясная продукция
-                                </a>
-                            </td>
-                            <td class="tender-box__status">
-                                <p>Прием заявок до: 30.01.2021 | 15:23</p>
+                                    <div class="timer-box">
+                                        <div class="seconds timer-box__val"></div>
+                                        <div class="timer-box__text">секунд</div>
+                                    </div>
+                                </div>
                             </td>
                             <td>
                                 <a href="#" class="btn-copy">
@@ -684,16 +616,145 @@
                             </td>
                         </tr>
                     </tbody>
-
                 </table>
             </div>
 
-            <ul class="pagination">
-                <li><a href="#">Назад</a></li>
-                <li><a href="#" class="active">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">Вперед</a></li>
-            </ul>
+            <h2 class="subtitle">Активные аукционы</h2>
+
+            <div class="table-responsive">
+                <table class="table-tender table">
+                    <thead>
+                        <tr>
+                            <th>Номер</th>
+                            <th>Наименование</th>
+                            <th>До начала аукциона</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="tender-box">
+                            <td class="tender-box__number color-red">
+                                <p>№1/17</p>
+                            </td>
+                            <td class="tender-box__name">
+                                <a href="#">
+                                    17.01 Технологический отход свиней (СВИНОМАТКИ) 48 голов Восточная зона - 1 машина
+                                </a>
+                            </td>
+                            <td class="tender-box__status">
+                                <div class="timer">
+                                    <div class="timer-box">
+                                        <div class="days timer-box__val"></div>
+                                        <div class="timer-box__text">дней</div>
+                                    </div>
+
+                                    <div class="timer-box">
+                                        <div class="hours timer-box__val"></div>
+                                        <div class="timer-box__text">часов</div>
+                                    </div>
+
+                                    <div class="timer-box">
+                                        <div class="minutes timer-box__val"></div>
+                                        <div class="timer-box__text">минут</div>
+                                    </div>
+
+                                    <div class="timer-box">
+                                        <div class="seconds timer-box__val"></div>
+                                        <div class="timer-box__text">секунд</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <a href="#" class="btn-copy">
+                                    <svg class="icon-copy">
+                                        <use xlink:href="img/sprite.svg#copy"></use>
+                                    </svg>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr class="tender-box">
+                            <td class="tender-box__number color-red">
+                                <p>№1/17</p>
+                            </td>
+                            <td class="tender-box__name">
+                                <a href="#">
+                                    17.01 Технологический отход свиней (СВИНОМАТКИ) 48 голов Восточная зона - 1 машина
+                                </a>
+                            </td>
+                            <td class="tender-box__status">
+                                <div class="timer">
+                                    <div class="timer-box">
+                                        <div class="days timer-box__val"></div>
+                                        <div class="timer-box__text">дней</div>
+                                    </div>
+
+                                    <div class="timer-box">
+                                        <div class="hours timer-box__val"></div>
+                                        <div class="timer-box__text">часов</div>
+                                    </div>
+
+                                    <div class="timer-box">
+                                        <div class="minutes timer-box__val"></div>
+                                        <div class="timer-box__text">минут</div>
+                                    </div>
+
+                                    <div class="timer-box">
+                                        <div class="seconds timer-box__val"></div>
+                                        <div class="timer-box__text">секунд</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <a href="#" class="btn-copy">
+                                    <svg class="icon-copy">
+                                        <use xlink:href="img/sprite.svg#copy"></use>
+                                    </svg>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr class="tender-box">
+                            <td class="tender-box__number color-red">
+                                <p>№1/17</p>
+                            </td>
+                            <td class="tender-box__name">
+                                <a href="#">
+                                    17.01 Технологический отход свиней (СВИНОМАТКИ) 48 голов Восточная зона - 1 машина
+                                </a>
+                            </td>
+                            <td class="tender-box__status">
+                                <div class="timer">
+                                    <div class="timer-box">
+                                        <div class="days timer-box__val"></div>
+                                        <div class="timer-box__text">дней</div>
+                                    </div>
+
+                                    <div class="timer-box">
+                                        <div class="hours timer-box__val"></div>
+                                        <div class="timer-box__text">часов</div>
+                                    </div>
+
+                                    <div class="timer-box">
+                                        <div class="minutes timer-box__val"></div>
+                                        <div class="timer-box__text">минут</div>
+                                    </div>
+
+                                    <div class="timer-box">
+                                        <div class="seconds timer-box__val"></div>
+                                        <div class="timer-box__text">секунд</div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <a href="#" class="btn-copy">
+                                    <svg class="icon-copy">
+                                        <use xlink:href="img/sprite.svg#copy"></use>
+                                    </svg>
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
         </div>
     </div>
 </div>

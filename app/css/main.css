@@ -167,10 +167,12 @@ input {
   input::placeholder {
     color: #9D9D9D; }
 
-h1 {
+h1, .subtitle {
   color: #262626;
-  width: 100%;
   font-size: 24px; }
+
+.subtitle {
+  width: 100%; }
 
 .btn {
   display: -webkit-box;
@@ -200,6 +202,12 @@ h1 {
   .btn-grey:hover {
     background: #6e6e6e; }
 
+.btn-red {
+  background: #A52417;
+  font-size: 15px; }
+  .btn-red:hover {
+    background: #d02d1d; }
+
 .btn-group {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -214,8 +222,17 @@ h1 {
     .btn-group .btn:last-child {
       margin: 0; }
 
+.bg-green {
+  background: #8CC152; }
+
+.bg-green {
+  background: #EBEBEB; }
+
 .color-red {
   color: #A52417; }
+
+.w-100 {
+  width: 100%; }
 
 .wrapper {
   width: 100%;
@@ -497,7 +514,18 @@ header {
   width: 100%;
   padding: 0 0 19px;
   margin: 0 0 13px;
-  border-bottom: 1px solid #717171; }
+  border-bottom: 1px solid #717171;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
 
 .filter-wrapper {
   width: 100%;
@@ -729,8 +757,8 @@ header {
       padding: 19px 11px; }
 
 .thead-tr__first {
-  -webkit-box-shadow: 0 3px 0 #7B8493;
-          box-shadow: 0 3px 0 #7B8493; }
+  height: 58px;
+  border-bottom: 3px solid #7B8493; }
 
 .thead-tr__last {
   border-bottom: 2px solid #93999E; }
@@ -753,6 +781,201 @@ header {
   width: 27px;
   height: 27px; }
 
+.description-tender {
+  width: 100%; }
+  .description-tender h3 {
+    margin: 0 0 11px;
+    color: #ABADB3;
+    font-size: 15px; }
+  .description-tender .btn-group {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .description-tender .btn-group .btn {
+      height: 54px;
+      font-size: 15px;
+      font-weight: normal;
+      width: 100%;
+      margin: 0 0 28px; }
+
+.col {
+  width: 20%;
+  padding: 0 19px 0 0; }
+
+.description-tender__content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .description-tender__content .w-100 {
+    width: 100%; }
+
+.description-tender__box {
+  color: #7B7B7B;
+  font-size: 15px;
+  margin: 0 0 33px 0;
+  width: 20%;
+  padding: 0 19px 0 0; }
+  .description-tender__box h4 {
+    color: #A52417;
+    margin: 0 0 17px;
+    font-weight: bold; }
+
+.timer-wrapper {
+  width: 100%; }
+
+.table .line {
+  width: 100%;
+  background: #C1C1C1;
+  height: 1px; }
+
+.timer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+
+.timer-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #7B7B7B;
+  font-size: 15px;
+  position: relative;
+  margin: 0 5px 0 0;
+  padding: 0 15px 0 0; }
+  .timer-box:before {
+    content: ':';
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #7B7B7B;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1; }
+  .timer-box:last-child:before {
+    display: none; }
+
+.timer-box__val {
+  color: #7B7B7B;
+  font-size: 36px;
+  font-weight: bold; }
+
+.upcoming-tender .title-line .btn {
+  width: 304px; }
+
+.upcoming-tender .table-responsive {
+  margin: 26px 0 46px 0; }
+  .upcoming-tender .table-responsive:last-child {
+    margin-bottom: 0; }
+  .upcoming-tender .table-responsive thead {
+    text-align: left;
+    color: #717171;
+    font-size: 10px; }
+    .upcoming-tender .table-responsive thead th {
+      padding: 0 9px 7px; }
+
+.auction .title-line {
+  border: none;
+  padding: 0; }
+
+.auction .description-tender__content {
+  border-bottom: 1px solid #717171;
+  margin: 0 0 32px; }
+
+.auction .btn-group .btn {
+  width: 307px; }
+
+.auction .timer-box__val {
+  color: #A52417; }
+
+.auction .timer-box:before {
+  color: #A52417; }
+
+.auction .timer-wrapper h4 {
+  color: #717171;
+  font-weight: normal;
+  font-size: 10px;
+  margin: 0 0 5px; }
+
+.explanation {
+  color: #717171;
+  font-size: 10px;
+  margin: 10px 0 0 0;
+  width: 100%; }
+
+.content-wrapper__auction {
+  padding-bottom: 0; }
+
+.auction-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .auction-wrapper .auction-wrapper__box {
+    width: 50%; }
+  .auction-wrapper .auction-wrapper__box-two {
+    background: #EBEBEB; }
+    .auction-wrapper .auction-wrapper__box-two .description-tender__content {
+      padding: 28px 9px 0; }
+      .auction-wrapper .auction-wrapper__box-two .description-tender__content .description-tender__box {
+        width: 50%;
+        margin: 0 0 40px; }
+  .auction-wrapper .description-tender__content {
+    border: none;
+    margin: 0; }
+  .auction-wrapper .table-responsive {
+    margin: 0; }
+    .auction-wrapper .table-responsive thead {
+      border-bottom: 1px solid #717171; }
+    .auction-wrapper .table-responsive table {
+      color: #7B7B7B; }
+      .auction-wrapper .table-responsive table td {
+        padding: 23px 9px 10px;
+        font-size: 14px;
+        font-weight: normal; }
+
+.current-rate p {
+  font-size: 36px; }
+
+.auction-wrapper__box-one {
+  margin: 0 0 100px; }
+
 @media only screen and (max-width: 1740px) {
   .form-wrapper .label-max {
     max-width: 380px; } }
@@ -764,11 +987,25 @@ header {
     max-width: none;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
-            order: 1; } }
+            order: 1; }
+  .tender-box__name {
+    padding: 0 9px; }
+  .auction .btn-group .btn {
+    width: 260px; } }
 
 @media only screen and (max-width: 1280px) {
   .table-add-tender tbody tr td {
     white-space: nowrap; } }
+
+@media only screen and (max-width: 1199px) {
+  .description-tender__box, .col {
+    width: 30%; }
+  .timer-wrapper {
+    width: 100%; }
+  .auction .btn-group .btn {
+    margin: 0 20px 10px 0; }
+    .auction .btn-group .btn:last-child {
+      margin: 0 0 10px; } }
 
 @media only screen and (max-width: 1100px) {
   .table-add-tender tbody tr td {
@@ -790,7 +1027,13 @@ header {
   .menu-toggle {
     width: 25px; }
     .menu-toggle div {
-      margin: 0 0 4px; } }
+      margin: 0 0 4px; }
+  .description-tender__box, .col {
+    width: 50%; }
+  .auction-wrapper .auction-wrapper__box {
+    width: 100%; }
+  .auction-wrapper__box-one {
+    margin: 0 0 40px; } }
 
 @media only screen and (max-width: 767px) {
   .sidebar-close {
@@ -802,13 +1045,21 @@ header {
   .tender-box td {
     padding: 0 5px; } }
 
+@media only screen and (max-width: 640px) {
+  .upcoming-tender .title-line .btn {
+    width: 280px; } }
+
 @media only screen and (max-width: 576px) {
   .tender-box__name {
     min-width: 200px; }
   .tender-box__status {
     min-width: 130px; }
   .tender-box__number {
-    min-width: 80px; } }
+    min-width: 80px; }
+  h1, .subtitle {
+    width: 100%; }
+  .upcoming-tender .title-line .btn {
+    margin: 10px auto 0; } }
 
 @media only screen and (max-width: 480px) {
   .box-admin {
@@ -821,8 +1072,11 @@ header {
             align-items: flex-end; }
   header {
     margin: 0 0 30px; }
-  h1 {
-    font-size: 22px; } }
+  h1, .subtitle, .current-rate p {
+    font-size: 22px; }
+  .description-tender__box, .col {
+    width: 100%;
+    padding: 0; } }
 
 @media only screen and (max-width: 420px) {
   .header-menu {
@@ -852,4 +1106,8 @@ header {
   .form-wrapper label {
     max-width: none; }
   .btn {
-    height: 50px; } }
+    height: 50px; }
+  .timer-box__val {
+    font-size: 28px; }
+  .timer-box:before {
+    font-size: 28px; } }

@@ -517,183 +517,174 @@
             </div>
         </header>
 
-        <div class="main-content active-tender">
+        <div class="main-content day-tender add-tender__content">
             <div class="title-line">
-                <h1>Активные тендеры</h1>
+                <h1>Еженедельный тендер 02.04.2020 - 08.04.2020</h1>
             </div>
 
-            <div class="filter-wrapper">
-                <h3>ФИЛЬТР</h3>
-                <form class="form-search">
-                    <label><input type="text" placeholder="Поиск по тендерам" required></label>
-                    <button type="submit">
-                        <svg class="icon-search">
-                            <use xlink:href="img/sprite.svg#loupe"></use>
-                        </svg>
-                    </button>
-                </form>
+            <div class="description-tender">
+                <h3>Описание еженедельного тендера</h3>
+
+                <div class="btn-group">
+                    <div class="col">
+                        <a href="#" class="btn btn-grey br-5">Сводная таблица</a>
+                    </div>
+                    <div class="col"><a href="#" class="btn btn-grey br-5">Таблица победителей</a></div>
+                    <div class="col"><a href="#" class="btn btn-grey br-5">Редактировать тендер</a></div>
+                    <div class="col"><a href="#" class="btn btn-grey br-5">Остановить сбор заявок</a></div>
+                    <div class="col"><a href="#" class="btn btn-red br-5">Закрыть тендер</a></div>
+
+                </div>
+
+                <div class="description-tender__content">
+                    <div class="description-tender__box">
+                        <h4>Дата/время окончания сбора заявок</h4>
+                        <p>30 января 2021 | 15:23</p>
+                    </div>
+                    <div class="description-tender__box">
+                        <h4>Дата подведения итогов</h4>
+                        <p>01 февраля 2021 | 15:23</p>
+                    </div>
+                    <div class="description-tender__box">
+                        <h4>Срок поставки с </h4>
+                        <p>01 февраля 2021 | 15:23</p>
+                    </div>
+                    <div class="description-tender__box">
+                        <h4>Срок поставки до</h4>
+                        <p>01 февраля 2021 | 15:23</p>
+                    </div>
+
+                    <div class="description-tender__box timer-wrapper">
+                        <h4>До окончания сбора заявок:</h4>
+
+                        <div class="timer">
+                            <div class="timer-box">
+                                <div class="days timer-box__val"></div>
+                                <div class="timer-box__text">дней</div>
+                            </div>
+
+                            <div class="timer-box">
+                                <div class="hours timer-box__val"></div>
+                                <div class="timer-box__text">часов</div>
+                            </div>
+
+                            <div class="timer-box">
+                                <div class="minutes timer-box__val"></div>
+                                <div class="timer-box__text">минут</div>
+                            </div>
+
+                            <div class="timer-box">
+                                <div class="seconds timer-box__val"></div>
+                                <div class="timer-box__text">секунд</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="table-responsive">
-                <table class="table-tender table">
+
+                <table class="table-add-tender table-day-tender table">
+
+                    <thead>
+                    <tr class="thead-tr__first">
+                        <th scope="colgroup" colspan="10"><h3>Тендерный объем</h3></th>
+                    </tr>
+
+                    <tr class="thead-tr__last">
+                        <th>№ п/п</th>
+                        <th>Артикул</th>
+                        <th>Наименование</th>
+                        <th>Описание</th>
+                        <th>Кол-во реализация</th>
+                        <th>Кол-во мониторинг</th>
+                        <th>Итого кол-во</th>
+                        <th>Термическое
+                            состояние
+                        </th>
+                        <th class="bg-green">
+                            Победившая цена
+                        </th>
+                        <th class="bg-green">
+                            Приоритет отгрузок
+                        </th>
+                    </tr>
+
+                    </thead>
+
                     <tbody>
-                        <tr class="tender-box">
-                            <td class="tender-box__number color-red">
-                                <p>№1/17</p>
-                            </td>
-                            <td class="tender-box__name">
-                                <a href="#">
-                                    Еженедельный тендер 02.06.2020 - 08.06.2020 Мясная продукция
-                                </a>
-                            </td>
-                            <td class="tender-box__status">
-                                <p>Прием заявок до: 30.01.2021 | 15:23</p>
-                            </td>
-                            <td>
-                                <a href="#" class="btn-copy">
-                                    <svg class="icon-copy">
-                                        <use xlink:href="img/sprite.svg#copy"></use>
-                                    </svg>
-                                </a>
-                            </td>
-                        </tr>
-
-                        <tr class="tender-box">
-                            <td class="tender-box__number color-red">
-                                <p>№1/17</p>
-                            </td>
-                            <td class="tender-box__name">
-                                <a href="#">
-                                    Еженедельный тендер 02.06.2020 - 08.06.2020 Мясная продукция
-                                </a>
-                            </td>
-                            <td class="tender-box__status">
-                                <p>Прием заявок до: 30.01.2021 | 15:23</p>
-                            </td>
-                            <td>
-                                <a href="#" class="btn-copy">
-                                    <svg class="icon-copy">
-                                        <use xlink:href="img/sprite.svg#copy"></use>
-                                    </svg>
-                                </a>
-                            </td>
-                        </tr>
-
-                        <tr class="tender-box">
-                            <td class="tender-box__number color-red">
-                                <p>№1/17</p>
-                            </td>
-                            <td class="tender-box__name">
-                                <a href="#">
-                                    Еженедельный тендер 02.06.2020 - 08.06.2020 Мясная продукция
-                                </a>
-                            </td>
-                            <td class="tender-box__status">
-                                <p>Прием заявок до: 30.01.2021 | 15:23</p>
-                            </td>
-                            <td>
-                                <a href="#" class="btn-copy">
-                                    <svg class="icon-copy">
-                                        <use xlink:href="img/sprite.svg#copy"></use>
-                                    </svg>
-                                </a>
-                            </td>
-                        </tr>
-
-                        <tr class="tender-box">
-                            <td class="tender-box__number color-red">
-                                <p>№1/17</p>
-                            </td>
-                            <td class="tender-box__name">
-                                <a href="#">
-                                    Еженедельный тендер 02.06.2020 - 08.06.2020 Мясная продукция
-                                </a>
-                            </td>
-                            <td class="tender-box__status">
-                                <p>Прием заявок до: 30.01.2021 | 15:23</p>
-                            </td>
-                            <td>
-                                <a href="#" class="btn-copy">
-                                    <svg class="icon-copy">
-                                        <use xlink:href="img/sprite.svg#copy"></use>
-                                    </svg>
-                                </a>
-                            </td>
-                        </tr>
-
-                        <tr class="tender-box">
-                            <td class="tender-box__number color-red">
-                                <p>№1/17</p>
-                            </td>
-                            <td class="tender-box__name">
-                                <a href="#">
-                                    Еженедельный тендер 02.06.2020 - 08.06.2020 Мясная продукция
-                                </a>
-                            </td>
-                            <td class="tender-box__status">
-                                <p>Прием заявок до: 30.01.2021 | 15:23</p>
-                            </td>
-                            <td>
-                                <a href="#" class="btn-copy">
-                                    <svg class="icon-copy">
-                                        <use xlink:href="img/sprite.svg#copy"></use>
-                                    </svg>
-                                </a>
-                            </td>
-                        </tr>
-
-                        <tr class="tender-box">
-                            <td class="tender-box__number color-red">
-                                <p>№1/17</p>
-                            </td>
-                            <td class="tender-box__name">
-                                <a href="#">
-                                    Еженедельный тендер 02.06.2020 - 08.06.2020 Мясная продукция
-                                </a>
-                            </td>
-                            <td class="tender-box__status">
-                                <p>Прием заявок до: 30.01.2021 | 15:23</p>
-                            </td>
-                            <td>
-                                <a href="#" class="btn-copy">
-                                    <svg class="icon-copy">
-                                        <use xlink:href="img/sprite.svg#copy"></use>
-                                    </svg>
-                                </a>
-                            </td>
-                        </tr>
-
-                        <tr class="tender-box">
-                            <td class="tender-box__number color-red">
-                                <p>№1/17</p>
-                            </td>
-                            <td class="tender-box__name">
-                                <a href="#">
-                                    Еженедельный тендер 02.06.2020 - 08.06.2020 Мясная продукция
-                                </a>
-                            </td>
-                            <td class="tender-box__status">
-                                <p>Прием заявок до: 30.01.2021 | 15:23</p>
-                            </td>
-                            <td>
-                                <a href="#" class="btn-copy">
-                                    <svg class="icon-copy">
-                                        <use xlink:href="img/sprite.svg#copy"></use>
-                                    </svg>
-                                </a>
-                            </td>
-                        </tr>
+                    <tr>
+                        <td>Наименование 1</td>
+                        <td>Штук</td>
+                        <td>120</td>
+                        <td>158 000</td>
+                        <td>158 000</td>
+                        <td>158 000</td>
+                        <td>158 000</td>
+                        <td>158 000</td>
+                        <td>
+                            <div class="line"></div>
+                        </td>
+                        <td>
+                            <div class="line"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Наименование 1</td>
+                        <td>Штук</td>
+                        <td>120</td>
+                        <td>158 000</td>
+                        <td>158 000</td>
+                        <td>158 000</td>
+                        <td>158 000</td>
+                        <td>158 000</td>
+                        <td>
+                            <div class="line"></div>
+                        </td>
+                        <td>
+                            <div class="line"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Наименование 1</td>
+                        <td>Штук</td>
+                        <td>120</td>
+                        <td>158 000</td>
+                        <td>158 000</td>
+                        <td>158 000</td>
+                        <td>158 000</td>
+                        <td>158 000</td>
+                        <td>
+                            <div class="line"></div>
+                        </td>
+                        <td>
+                            <div class="line"></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Наименование 1</td>
+                        <td>Штук</td>
+                        <td>120</td>
+                        <td>158 000</td>
+                        <td>158 000</td>
+                        <td>158 000</td>
+                        <td>158 000</td>
+                        <td>158 000</td>
+                        <td>
+                            <div class="line"></div>
+                        </td>
+                        <td>
+                            <div class="line"></div>
+                        </td>
+                    </tr>
                     </tbody>
-
                 </table>
             </div>
 
-            <ul class="pagination">
-                <li><a href="#">Назад</a></li>
-                <li><a href="#" class="active">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">Вперед</a></li>
-            </ul>
+            <div class="btn-group">
+                <a href="#" class="btn btn-grey br-5">Сохранить цены</a>
+            </div>
+
         </div>
     </div>
 </div>
