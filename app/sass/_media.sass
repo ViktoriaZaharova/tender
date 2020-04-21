@@ -5,6 +5,13 @@
   .form-wrapper .label-max
     max-width: 380px
 
+  .table-customers-new
+    width: 100%
+
+@media only screen and (max-width : 1460px)
+  .table-customers-new .btn
+    width: 160px
+
 @media only screen and (max-width : 1330px)
   .form-wrapper label
     max-width: 19%
@@ -19,10 +26,19 @@
   .auction .btn-group .btn
     width: 260px
 
+  .table-customers-new .btn
+    width: 130px
+
 
 @media only screen and (max-width : 1280px)
   .table-add-tender tbody tr td
     white-space: nowrap
+
+  .registration-user .form
+    padding: 0
+
+  .registration-user .form-contract .btn-close
+    margin: 0 0 20px auto
 
 @media only screen and (max-width : 1199px)
   .description-tender__box, .col
@@ -44,6 +60,10 @@
 
   .form-wrapper label
     max-width: 49%
+
+  .table-customers-new .btn
+    width: auto
+    padding: 0 10px
 
 @media only screen and (max-width : 991px)
   .tender-box
@@ -73,6 +93,34 @@
   .auction-wrapper__box-one
     margin: 0 0 40px
 
+  .auction-table__body .form-group
+    width: 300px
+
+  .table-customers-new
+    .btn
+      width: 160px
+      padding: 0
+    .btn-group
+      flex-wrap: nowrap
+
+  .registration-user
+    .form
+      input, button
+        width: calc(100% - 200px)
+      .form-group__title
+        width: 200px
+
+  .list-wrapper, .field__wrapper
+    width: calc(100% - 200px)
+
+
+  .registration-user .form-contract .line-bottom .checkbox
+    width: 200px
+
+  .registration-user .form-contract button
+    margin: 17px 0 0 200px
+
+
 @media only screen and (max-width : 767px)
   .sidebar-close
     display: flex
@@ -84,6 +132,61 @@
     td
       padding: 0 5px
 
+  .auction-table__body .form-group
+    width: 100%
+
+  .auction-table__box
+    width: 100%
+    margin-right: 0
+
+  .add-auction__content .form-wrapper .label-date
+    max-width: 280px
+
+  .auction-table__body
+    padding: 25px 10px
+
+  .tabs__content
+    padding: 0
+
+
+@media only screen and (max-width : 680px)
+  .tabs__caption li
+    margin: 0 auto 20px
+    &:last-child
+      margin: 0 auto 20px
+
+  .registration-user
+    .form
+      input, button
+        width: 100%
+      .form-group__title
+        width: 100%
+        margin: 0 0 5px
+      label, .form-group
+        flex-direction: column
+        align-items: flex-start
+        .form-group__title
+          padding: 0
+
+  .list-wrapper, .field__wrapper
+    width: 100%
+
+  .registration-user .form-contract .line-bottom .checkbox
+    flex-direction: row
+    width: 100%
+    margin: 0 0 5px
+
+  .registration-user .form-contract button
+    margin: 17px 0 0 0
+
+  .registration-user .form .radio, .settings .list-checkbox .checkbox
+    flex-direction: row
+    align-items: center
+
+  .settings .list-checkbox
+    width: 100%
+    li
+      width: 100%
 
 @media only screen and (max-width : 640px)
   .upcoming-tender .title-line .btn
@@ -121,6 +224,11 @@
     width: 100%
     padding: 0
 
+  .dropDown-subMenu
+    left: 50%
+    top: 100%
+    transform: translate(-50%,0)
+
 @media only screen and (max-width : 420px)
   .header-menu
     flex-direction: column
@@ -156,3 +264,6 @@
 
   .timer-box:before
     font-size: 28px
+
+  .table-customers-details tr td
+    padding: 15px

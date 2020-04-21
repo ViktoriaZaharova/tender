@@ -16,8 +16,10 @@
     <meta name="msapplication-navbutton-color" content="#000">
     <!-- iOS Safari -->
     <meta name="apple-mobile-web-app-status-bar-style" content="#000">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
 
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css"/>
@@ -48,7 +50,7 @@
                     </a>
                 </li>
 
-                <li class="nav-item active" data-item="law">
+                <li class="nav-item" data-item="law">
                     <a href="#" class="nav-links">
                         <svg>
                             <use xlink:href="img/sprite.svg#law"></use>
@@ -79,7 +81,7 @@
                         </svg>
                     </a>
                 </li>
-                <li class="nav-item" data-item="salesman">
+                <li class="nav-item active" data-item="salesman">
                     <a href="#" class="nav-links">
                         <svg>
                             <use xlink:href="img/sprite.svg#salesman"></use>
@@ -425,7 +427,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a href="#" class="nav-links open">
+                        <a href="#" class="nav-links">
                             <svg class="icon">
                                 <use xlink:href="img/sprite.svg#add-user"></use>
                             </svg>
@@ -443,7 +445,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a href="#" class="nav-links">
+                        <a href="#" class="nav-links open">
                             <svg class="icon">
                                 <use xlink:href="img/sprite.svg#registration"></use>
                             </svg>
@@ -520,242 +522,345 @@
             </div>
         </header>
 
-        <div class="main-content upcoming-tender">
+        <div class="main-content registration-user">
             <div class="title-line">
-                <h1>Предстоящие аукционы</h1>
-
-                <a href="#" class="btn btn-red br-5">Посмотреть клиентов на странице</a>
+                <h1>Регистрация клиента</h1>
             </div>
 
+            <div class="tabs">
+                <ul class="tabs__caption">
+                    <li>1. Пользователь</li>
+                    <li>2. Клиент</li>
+                    <li class="active">3. Документы для заключения договора</li>
+                    <li>4. Дополнительно</li>
+                </ul>
+                <div class="tabs__content">
 
-            <div class="table-responsive">
-                <table class="table-tender table">
-                    <thead>
-                        <tr>
-                            <th>Номер</th>
-                            <th>Наименование</th>
-                            <th>До начала аукциона</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="tender-box">
-                            <td class="tender-box__number color-red">
-                                <p>№1/17</p>
-                            </td>
-                            <td class="tender-box__name">
-                                <a href="#">
-                                    17.01 Технологический отход свиней (СВИНОМАТКИ) 48 голов Восточная зона - 1 машина
-                                </a>
-                            </td>
-                            <td class="tender-box__status">
-                                <div class="timer">
-                                    <div class="timer-box">
-                                        <div class="days timer-box__val"></div>
-                                        <div class="timer-box__text">дней</div>
-                                    </div>
+                    <form method="post" class="form">
+                        <label>
+                            <span class="form-group__title">E-mail (Логин)</span>
+                            <input type="text" name="mail">
+                        </label>
 
-                                    <div class="timer-box">
-                                        <div class="hours timer-box__val"></div>
-                                        <div class="timer-box__text">часов</div>
-                                    </div>
+                        <label>
+                            <span class="form-group__title">Пароль</span>
+                            <input type="text" name="password">
+                        </label>
 
-                                    <div class="timer-box">
-                                        <div class="minutes timer-box__val"></div>
-                                        <div class="timer-box__text">минут</div>
-                                    </div>
+                        <label>
+                            <span class="form-group__title">Повтор пароля</span>
+                            <input type="text" name="double_password">
+                        </label>
 
-                                    <div class="timer-box">
-                                        <div class="seconds timer-box__val"></div>
-                                        <div class="timer-box__text">секунд</div>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <a href="#" class="btn-copy">
-                                    <svg class="icon-copy">
-                                        <use xlink:href="img/sprite.svg#copy"></use>
-                                    </svg>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr class="tender-box">
-                            <td class="tender-box__number color-red">
-                                <p>№1/17</p>
-                            </td>
-                            <td class="tender-box__name">
-                                <a href="#">
-                                    17.01 Технологический отход свиней (СВИНОМАТКИ) 48 голов Восточная зона - 1 машина
-                                </a>
-                            </td>
-                            <td class="tender-box__status">
-                                <div class="timer">
-                                    <div class="timer-box">
-                                        <div class="days timer-box__val"></div>
-                                        <div class="timer-box__text">дней</div>
-                                    </div>
+                        <label>
+                            <span class="form-group__title">Имя</span>
+                            <input type="text" name="name">
+                        </label>
 
-                                    <div class="timer-box">
-                                        <div class="hours timer-box__val"></div>
-                                        <div class="timer-box__text">часов</div>
-                                    </div>
+                        <label>
+                            <span class="form-group__title">Фамилия</span>
+                            <input type="text" name="first_name">
+                        </label>
 
-                                    <div class="timer-box">
-                                        <div class="minutes timer-box__val"></div>
-                                        <div class="timer-box__text">минут</div>
-                                    </div>
+                        <label>
+                            <span class="form-group__title">Телефон мобильный</span>
+                            <input type="text" name="phone">
+                        </label>
 
-                                    <div class="timer-box">
-                                        <div class="seconds timer-box__val"></div>
-                                        <div class="timer-box__text">секунд</div>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <a href="#" class="btn-copy">
-                                    <svg class="icon-copy">
-                                        <use xlink:href="img/sprite.svg#copy"></use>
-                                    </svg>
-                                </a>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+                        <label>
+                            <span class="form-group__title">Должность</span>
+                            <input type="text" name="position">
+                        </label>
 
-            <h2 class="subtitle">Активные аукционы</h2>
+                        <button type="button" class="btn btn-red">Далее</button>
+                    </form>
 
-            <div class="table-responsive">
-                <table class="table-tender table">
-                    <thead>
-                        <tr>
-                            <th>Номер</th>
-                            <th>Наименование</th>
-                            <th>До начала аукциона</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="tender-box">
-                            <td class="tender-box__number color-red">
-                                <p>№1/17</p>
-                            </td>
-                            <td class="tender-box__name">
-                                <a href="#">
-                                    17.01 Технологический отход свиней (СВИНОМАТКИ) 48 голов Восточная зона - 1 машина
-                                </a>
-                            </td>
-                            <td class="tender-box__status">
-                                <div class="timer">
-                                    <div class="timer-box">
-                                        <div class="days timer-box__val"></div>
-                                        <div class="timer-box__text">дней</div>
-                                    </div>
+                </div>
 
-                                    <div class="timer-box">
-                                        <div class="hours timer-box__val"></div>
-                                        <div class="timer-box__text">часов</div>
-                                    </div>
+                <div class="tabs__content">
+                    <form method="post" class="form">
+                        <label>
+                            <span class="form-group__title">Полное наименование организации/ИП</span>
+                            <input type="text" name="name_company">
+                        </label>
 
-                                    <div class="timer-box">
-                                        <div class="minutes timer-box__val"></div>
-                                        <div class="timer-box__text">минут</div>
-                                    </div>
+                        <label>
+                            <span class="form-group__title">Краткое наименование организации/ИП</span>
+                            <input type="text" name="name_company2">
+                        </label>
 
-                                    <div class="timer-box">
-                                        <div class="seconds timer-box__val"></div>
-                                        <div class="timer-box__text">секунд</div>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <a href="#" class="btn-copy">
-                                    <svg class="icon-copy">
-                                        <use xlink:href="img/sprite.svg#copy"></use>
-                                    </svg>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr class="tender-box">
-                            <td class="tender-box__number color-red">
-                                <p>№1/17</p>
-                            </td>
-                            <td class="tender-box__name">
-                                <a href="#">
-                                    17.01 Технологический отход свиней (СВИНОМАТКИ) 48 голов Восточная зона - 1 машина
-                                </a>
-                            </td>
-                            <td class="tender-box__status">
-                                <div class="timer">
-                                    <div class="timer-box">
-                                        <div class="days timer-box__val"></div>
-                                        <div class="timer-box__text">дней</div>
-                                    </div>
+                        <label>
+                            <span class="form-group__title">Адрес регистрации</span>
+                            <input type="text" name="address_company">
+                        </label>
 
-                                    <div class="timer-box">
-                                        <div class="hours timer-box__val"></div>
-                                        <div class="timer-box__text">часов</div>
-                                    </div>
+                        <label>
+                            <span class="form-group__title">Почтовый адрес (если отличается)</span>
+                            <input type="text" name="name">
+                        </label>
 
-                                    <div class="timer-box">
-                                        <div class="minutes timer-box__val"></div>
-                                        <div class="timer-box__text">минут</div>
-                                    </div>
+                        <label>
+                            <span class="form-group__title">ИНН</span>
+                            <input type="text" name="inn">
+                        </label>
 
-                                    <div class="timer-box">
-                                        <div class="seconds timer-box__val"></div>
-                                        <div class="timer-box__text">секунд</div>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <a href="#" class="btn-copy">
-                                    <svg class="icon-copy">
-                                        <use xlink:href="img/sprite.svg#copy"></use>
-                                    </svg>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr class="tender-box">
-                            <td class="tender-box__number color-red">
-                                <p>№1/17</p>
-                            </td>
-                            <td class="tender-box__name">
-                                <a href="#">
-                                    17.01 Технологический отход свиней (СВИНОМАТКИ) 48 голов Восточная зона - 1 машина
-                                </a>
-                            </td>
-                            <td class="tender-box__status">
-                                <div class="timer">
-                                    <div class="timer-box">
-                                        <div class="days timer-box__val"></div>
-                                        <div class="timer-box__text">дней</div>
-                                    </div>
+                        <label>
+                            <span class="form-group__title">ОГРН</span>
+                            <input type="text" name="phone">
+                        </label>
 
-                                    <div class="timer-box">
-                                        <div class="hours timer-box__val"></div>
-                                        <div class="timer-box__text">часов</div>
-                                    </div>
+                        <div class="form-group">
+                            <span class="form-group__title">Направление деятельности</span>
+                            <ul class="list-wrapper">
+                                <li><a href="#" class="active">Оптовая торговля</a></li>
+                                <li><a href="#">Мелкооптовая торговля</a></li>
+                                <li><a href="#">Дистрибьюция </a></li>
+                                <li><a href="#">Переработка</a></li>
+                                <li><a href="#">Производство</a></li>
+                                <li><a href="#">Оптовая торговля</a></li>
+                                <li><a href="#">Мелкооптовая торговля</a></li>
+                            </ul>
+                        </div>
 
-                                    <div class="timer-box">
-                                        <div class="minutes timer-box__val"></div>
-                                        <div class="timer-box__text">минут</div>
-                                    </div>
+                        <div class="form-group">
+                            <span class="form-group__title">Направление деятельности</span>
+                            <ul class="list-wrapper">
+                                <li><a href="#" class="active">Блоки из жилованного мяса и прочая продукция из
+                                    свинины</a></li>
+                                <li><a href="#">Отрубы из свинины </a></li>
+                                <li><a href="#">Субпродукты свиные и жиры животные </a></li>
+                                <li><a href="#">Кость свиная и полуфабрикаты мясокостей из свинины </a></li>
+                                <li><a href="#">Мясо свинины в тушах и полутушах </a></li>
+                                <li><a href="#">Полуфабрикаты из мяса свинины </a></li>
+                            </ul>
+                        </div>
 
-                                    <div class="timer-box">
-                                        <div class="seconds timer-box__val"></div>
-                                        <div class="timer-box__text">секунд</div>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <a href="#" class="btn-copy">
-                                    <svg class="icon-copy">
-                                        <use xlink:href="img/sprite.svg#copy"></use>
-                                    </svg>
-                                </a>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                        <label>
+                            <span class="form-group__title">Сайт компании</span>
+                            <input type="text" name="site">
+                        </label>
+
+                        <div class="form-group">
+                            <span class="form-group__title">Логотип компании</span>
+
+                            <div class="field__wrapper">
+                                <input name="file" type="file" id="field__file" class="field field__file" multiple>
+
+                                <label class="field__file-wrapper" for="field__file">
+                                    <div class="field__file-button">Выберите файл</div>
+                                    <div class="field__file-fake">Файл не выбран</div>
+                                </label>
+
+                            </div>
+                        </div>
+
+
+                        <button type="button" class="btn btn-red">Далее</button>
+                    </form>
+
+                </div>
+
+                <div class="tabs__content active">
+                    <form method="post" class="form">
+
+                        <ul class="list-radio">
+                            <li>
+                                <label class="radio">
+                                    <input class="radio-inp" type="radio" name="radio">
+                                    <span class="radio-custom"></span>
+                                    <span class="label">Юридическое лицо</span>
+                                </label>
+                            </li>
+
+                            <li>
+                                <label class="radio">
+                                    <input class="radio-inp" type="radio" name="radio">
+                                    <span class="radio-custom"></span>
+                                    <span class="label">ИП</span>
+                                </label>
+                            </li>
+                        </ul>
+
+                        <div class="form-group">
+                            <span class="form-group__title">Паспорт</span>
+
+                            <div class="field__wrapper">
+                                <input name="file" type="file" id="field__file1" class="field field__file" multiple>
+
+                                <label class="field__file-wrapper" for="field__file1">
+                                    <div class="field__file-button">Выберите файл</div>
+                                    <div class="field__file-fake">Файл не выбран</div>
+                                </label>
+
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <span class="form-group__title">- Налоговый документ о регистрации ИП
+и присвоении ОГРНИП</span>
+
+                            <div class="field__wrapper">
+                                <input name="file" type="file" id="field__file2" class="field field__file" multiple>
+
+                                <label class="field__file-wrapper" for="field__file2">
+                                    <div class="field__file-button">Выберите файл</div>
+                                    <div class="field__file-fake">Файл не выбран</div>
+                                </label>
+
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <span class="form-group__title">Свидетельство о постановке ИП на учет
+в налоговом органе</span>
+
+                            <div class="field__wrapper">
+                                <input name="file" type="file" id="field__file3" class="field field__file" multiple>
+
+                                <label class="field__file-wrapper" for="field__file3">
+                                    <div class="field__file-button">Выберите файл</div>
+                                    <div class="field__file-fake">Файл не выбран</div>
+                                </label>
+
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <span class="form-group__title">Заверенные ИП копии документов, содержащих сведения о банковском счете ИП</span>
+
+                            <div class="field__wrapper">
+                                <input name="file" type="file" id="field__file4" class="field field__file" multiple>
+
+                                <label class="field__file-wrapper" for="field__file4">
+                                    <div class="field__file-button">Выберите файл</div>
+                                    <div class="field__file-fake">Файл не выбран</div>
+                                </label>
+
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="form-group__title">Карточка учета основных сведений о клиенте по форме ООО «ТД Агро-Белогорье»</span>
+
+                            <div class="field__wrapper">
+                                <input name="file" type="file" id="field__file5" class="field field__file" multiple>
+
+                                <label class="field__file-wrapper" for="field__file5">
+                                    <div class="field__file-button">Выберите файл</div>
+                                    <div class="field__file-fake">Файл не выбран</div>
+                                </label>
+
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="form-group__title">Нотариальная доверенность</span>
+
+                            <div class="field__wrapper">
+                                <input name="file" type="file" id="field__file6" class="field field__file" multiple>
+
+                                <label class="field__file-wrapper" for="field__file6">
+                                    <span class="field__file-button">Выберите файл</span>
+                                    <span class="field__file-fake">Файл не выбран</span>
+                                </label>
+
+                            </div>
+                        </div>
+
+
+                        <button type="button" class="btn btn-red">Далее</button>
+                    </form>
+
+                </div>
+
+                <div class="tabs__content">
+                    <form method="post" class="form form-contract form-contract__ip">
+
+                        <div class="contract-wrapper">
+                            <label>
+                                <span class="form-group__title">№ договора</span>
+                                <input type="text" name="doc">
+                            </label>
+
+                            <label>
+                                <span class="form-group__title">№ договора</span>
+                                <input type="text" name="doc">
+                            </label>
+
+                            <label>
+                                <span class="form-group__title">Условия оплаты</span>
+                                <input type="text" name="pay">
+                            </label>
+
+                            <label>
+                                <span class="form-group__title">Дата начала договора</span>
+                                <input type="text" name="date" class="datepicker1">
+                            </label>
+
+                            <label>
+                                <span class="form-group__title">Дата окончания договора</span>
+                                <input type="text" name="date" class="datepicker2">
+                            </label>
+
+                            <label>
+                                <span class="form-group__title">Ответственный менеджер клиента</span>
+                                <input type="text" name="manager">
+                            </label>
+                        </div>
+
+                        <div class="contract-wrapper no-border">
+                            <label>
+                                <span class="form-group__title">№ договора</span>
+                                <input type="text" name="doc">
+                            </label>
+
+                            <label>
+                                <span class="form-group__title">№ договора</span>
+                                <input type="text" name="doc">
+                            </label>
+
+                            <label>
+                                <span class="form-group__title">Условия оплаты</span>
+                                <input type="text" name="pay">
+                            </label>
+
+                            <label>
+                                <span class="form-group__title">Дата начала договора</span>
+                                <input type="text" name="date" class="datepicker1">
+                            </label>
+
+                            <label>
+                                <span class="form-group__title">Дата окончания договора</span>
+                                <input type="text" name="date" class="datepicker2">
+                            </label>
+
+                            <label>
+                                <span class="form-group__title">Ответственный менеджер клиента</span>
+                                <input type="text" name="manager">
+                            </label>
+                        </div>
+
+
+                        <div class="line-bottom">
+                            <div class="form-group">
+                                <label class="checkbox">
+                                    <input class="checkbox-inp" type="checkbox" name="checkbox">
+                                    <span class="checkbox-custom"></span>
+                                    <span class="label">Автоматическая пролонгация</span>
+                                </label>
+                                <input type="text" name="text">
+                            </div>
+
+                            <div class="form-group">
+                                <a href="#" class="btn btn-grey add-contract br-5">Добавить договор</a>
+                            </div>
+
+                            <button type="submit" class="btn btn-red">Создать учетную запись</button>
+                        </div>
+                    </form>
+
+                </div>
             </div>
 
         </div>
@@ -769,6 +874,7 @@
 <script src="js/sidebar.compact.js"></script>
 <script src="js/jquery.datetimepicker.full.min.js"></script>
 <script src="js/common.js"></script>
+
 
 </body>
 </html>

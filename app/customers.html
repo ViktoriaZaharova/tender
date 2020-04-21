@@ -48,7 +48,7 @@
                     </a>
                 </li>
 
-                <li class="nav-item active" data-item="law">
+                <li class="nav-item" data-item="law">
                     <a href="#" class="nav-links">
                         <svg>
                             <use xlink:href="img/sprite.svg#law"></use>
@@ -79,7 +79,7 @@
                         </svg>
                     </a>
                 </li>
-                <li class="nav-item" data-item="salesman">
+                <li class="nav-item active" data-item="salesman">
                     <a href="#" class="nav-links">
                         <svg>
                             <use xlink:href="img/sprite.svg#salesman"></use>
@@ -416,7 +416,7 @@
 
                 <ul class="submenu-area__menu">
                     <li class="nav-item">
-                        <a href="#" class="nav-links">
+                        <a href="#" class="nav-links open">
                             <svg class="icon">
                                 <use xlink:href="img/sprite.svg#checklist"></use>
                             </svg>
@@ -425,7 +425,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a href="#" class="nav-links open">
+                        <a href="#" class="nav-links">
                             <svg class="icon">
                                 <use xlink:href="img/sprite.svg#add-user"></use>
                             </svg>
@@ -520,244 +520,394 @@
             </div>
         </header>
 
-        <div class="main-content upcoming-tender">
+        <div class="main-content customers">
             <div class="title-line">
-                <h1>Предстоящие аукционы</h1>
-
-                <a href="#" class="btn btn-red br-5">Посмотреть клиентов на странице</a>
+                <h1>Клиенты</h1>
             </div>
 
+            <div class="filter-wrapper">
+                <div class="drop-wrapper">
+                    <div class="dropDown-item">
+                        <h3>Фильтр</h3>
+                        <div class="icon-arrow"><img src="img/arrow-bottom.svg" alt=""></div>
+                    </div>
+
+                    <div class="dropDown">
+                        <div class="links-dropDown">
+                            <p>Ответственный менеджер</p>
+
+                            <div class="dropDown-subMenu">
+                                <ul class="list-checkbox">
+                                    <li>
+                                        <label class="checkbox">
+                                            <input class="checkbox-inp" type="checkbox" name="checkbox">
+                                            <span class="checkbox-custom"></span>
+                                            <span class="label">Иван Иванов</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="checkbox">
+                                            <input class="checkbox-inp" type="checkbox" name="checkbox">
+                                            <span class="checkbox-custom"></span>
+                                            <span class="label">Менеджер Обычный</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="checkbox">
+                                            <input class="checkbox-inp" type="checkbox" name="checkbox">
+                                            <span class="checkbox-custom"></span>
+                                            <span class="label">Тамара Васькина</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="checkbox">
+                                            <input class="checkbox-inp" type="checkbox" name="checkbox">
+                                            <span class="checkbox-custom"></span>
+                                            <span class="label">Тенгиз Карселадзе</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="checkbox">
+                                            <input class="checkbox-inp" type="checkbox" name="checkbox">
+                                            <span class="checkbox-custom"></span>
+                                            <span class="label">Ольга Радченко</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="checkbox">
+                                            <input class="checkbox-inp" type="checkbox" name="checkbox">
+                                            <span class="checkbox-custom"></span>
+                                            <span class="label">Максим Коротченко</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="checkbox">
+                                            <input class="checkbox-inp" type="checkbox" name="checkbox">
+                                            <span class="checkbox-custom"></span>
+                                            <span class="label">Константин Ларев</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="checkbox">
+                                            <input class="checkbox-inp" type="checkbox" name="checkbox">
+                                            <span class="checkbox-custom"></span>
+                                            <span class="label">Ирина Демидкова</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="checkbox">
+                                            <input class="checkbox-inp" type="checkbox" name="checkbox">
+                                            <span class="checkbox-custom"></span>
+                                            <span class="label">Анастасия Cемидоцкая</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="checkbox">
+                                            <input class="checkbox-inp" type="checkbox" name="checkbox">
+                                            <span class="checkbox-custom"></span>
+                                            <span class="label">Юрий Новиков</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="checkbox">
+                                            <input class="checkbox-inp" type="checkbox" name="checkbox">
+                                            <span class="checkbox-custom"></span>
+                                            <span class="label">Мария Козьмина</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="checkbox">
+                                            <input class="checkbox-inp" type="checkbox" name="checkbox">
+                                            <span class="checkbox-custom"></span>
+                                            <span class="label">Варвара Воронова</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="checkbox">
+                                            <input class="checkbox-inp" type="checkbox" name="checkbox">
+                                            <span class="checkbox-custom"></span>
+                                            <span class="label">Наталья Чернова</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="links-dropDown">
+                            <p>Тип договора</p>
+
+                            <div class="dropDown-subMenu dropDown-subMenu__type">
+                                <ul class="list-checkbox">
+                                    <li>
+                                        <label class="checkbox">
+                                            <input class="checkbox-inp" type="checkbox" name="checkbox">
+                                            <span class="checkbox-custom"></span>
+                                            <span class="label">Мясная продукция, за исключением
+(полутуш 2 и 4 категории)</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="checkbox">
+                                            <input class="checkbox-inp" type="checkbox" name="checkbox">
+                                            <span class="checkbox-custom"></span>
+                                            <span class="label">Полутуши 4 категории</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="checkbox">
+                                            <input class="checkbox-inp" type="checkbox" name="checkbox">
+                                            <span class="checkbox-custom"></span>
+                                            <span class="label">Полутуши 2 категории</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="checkbox">
+                                            <input class="checkbox-inp" type="checkbox" name="checkbox">
+                                            <span class="checkbox-custom"></span>
+                                            <span class="label">Живые свиньи (товарные)</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="checkbox">
+                                            <input class="checkbox-inp" type="checkbox" name="checkbox">
+                                            <span class="checkbox-custom"></span>
+                                            <span class="label">Живые свиньи (технический брак)</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="checkbox">
+                                            <input class="checkbox-inp" type="checkbox" name="checkbox">
+                                            <span class="checkbox-custom"></span>
+                                            <span class="label">Живые свиньи (3 категории)</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="checkbox">
+                                            <input class="checkbox-inp" type="checkbox" name="checkbox">
+                                            <span class="checkbox-custom"></span>
+                                            <span class="label">Жир животный</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label class="checkbox">
+                                            <input class="checkbox-inp" type="checkbox" name="checkbox">
+                                            <span class="checkbox-custom"></span>
+                                            <span class="label">Черный список</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <a href="#" class="btn btn-red br-5">Очистить фильтр</a>
+                        <a href="#" class="btn btn-red br-5">Применить фильтр</a>
+                    </div>
+                </div>
+
+                <form class="form-search">
+                    <label><input type="text" placeholder="Поиск по тендерам" required></label>
+                    <button type="submit">
+                        <svg class="icon-search">
+                            <use xlink:href="img/sprite.svg#loupe"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
 
             <div class="table-responsive">
-                <table class="table-tender table">
+                <table class="table-tender table-add-tender table table-customers">
                     <thead>
                         <tr>
-                            <th>Номер</th>
-                            <th>Наименование</th>
-                            <th>До начала аукциона</th>
+                            <th>№</th>
+                            <th class="company">Компания</th>
+                            <th>
+                                ИНН</th>
+                            <th>
+                                Договор</th>
+                            <th class="type-doc">
+                                Тип договора</th>
+                            <th>
+                                Действителен с</th>
+                            <th>
+                                Действителен до</th>
+                            <th>
+                                Ответственный менеджер</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="tender-box">
-                            <td class="tender-box__number color-red">
-                                <p>№1/17</p>
-                            </td>
-                            <td class="tender-box__name">
-                                <a href="#">
-                                    17.01 Технологический отход свиней (СВИНОМАТКИ) 48 голов Восточная зона - 1 машина
-                                </a>
-                            </td>
-                            <td class="tender-box__status">
-                                <div class="timer">
-                                    <div class="timer-box">
-                                        <div class="days timer-box__val"></div>
-                                        <div class="timer-box__text">дней</div>
-                                    </div>
-
-                                    <div class="timer-box">
-                                        <div class="hours timer-box__val"></div>
-                                        <div class="timer-box__text">часов</div>
-                                    </div>
-
-                                    <div class="timer-box">
-                                        <div class="minutes timer-box__val"></div>
-                                        <div class="timer-box__text">минут</div>
-                                    </div>
-
-                                    <div class="timer-box">
-                                        <div class="seconds timer-box__val"></div>
-                                        <div class="timer-box__text">секунд</div>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <a href="#" class="btn-copy">
-                                    <svg class="icon-copy">
-                                        <use xlink:href="img/sprite.svg#copy"></use>
-                                    </svg>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr class="tender-box">
-                            <td class="tender-box__number color-red">
-                                <p>№1/17</p>
-                            </td>
-                            <td class="tender-box__name">
-                                <a href="#">
-                                    17.01 Технологический отход свиней (СВИНОМАТКИ) 48 голов Восточная зона - 1 машина
-                                </a>
-                            </td>
-                            <td class="tender-box__status">
-                                <div class="timer">
-                                    <div class="timer-box">
-                                        <div class="days timer-box__val"></div>
-                                        <div class="timer-box__text">дней</div>
-                                    </div>
-
-                                    <div class="timer-box">
-                                        <div class="hours timer-box__val"></div>
-                                        <div class="timer-box__text">часов</div>
-                                    </div>
-
-                                    <div class="timer-box">
-                                        <div class="minutes timer-box__val"></div>
-                                        <div class="timer-box__text">минут</div>
-                                    </div>
-
-                                    <div class="timer-box">
-                                        <div class="seconds timer-box__val"></div>
-                                        <div class="timer-box__text">секунд</div>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <a href="#" class="btn-copy">
-                                    <svg class="icon-copy">
-                                        <use xlink:href="img/sprite.svg#copy"></use>
-                                    </svg>
-                                </a>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <h2 class="subtitle">Активные аукционы</h2>
-
-            <div class="table-responsive">
-                <table class="table-tender table">
-                    <thead>
                         <tr>
-                            <th>Номер</th>
-                            <th>Наименование</th>
-                            <th>До начала аукциона</th>
+                            <td>1</td>
+                            <td class="company">ООО "АТЛАНТ"</td>
+                            <td>3811464249</td>
+                            <td>37 МП-08-02/2020</td>
+                            <td class="type-doc">Мясная продукция, за исключением (полутуш 2 и 4 категории)</td>
+                            <td>27.01.2020</td>
+                            <td>31.12.2020</td>
+                            <td>Коротченко Максим</td>
                         </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="tender-box">
-                            <td class="tender-box__number color-red">
-                                <p>№1/17</p>
-                            </td>
-                            <td class="tender-box__name">
-                                <a href="#">
-                                    17.01 Технологический отход свиней (СВИНОМАТКИ) 48 голов Восточная зона - 1 машина
-                                </a>
-                            </td>
-                            <td class="tender-box__status">
-                                <div class="timer">
-                                    <div class="timer-box">
-                                        <div class="days timer-box__val"></div>
-                                        <div class="timer-box__text">дней</div>
-                                    </div>
-
-                                    <div class="timer-box">
-                                        <div class="hours timer-box__val"></div>
-                                        <div class="timer-box__text">часов</div>
-                                    </div>
-
-                                    <div class="timer-box">
-                                        <div class="minutes timer-box__val"></div>
-                                        <div class="timer-box__text">минут</div>
-                                    </div>
-
-                                    <div class="timer-box">
-                                        <div class="seconds timer-box__val"></div>
-                                        <div class="timer-box__text">секунд</div>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <a href="#" class="btn-copy">
-                                    <svg class="icon-copy">
-                                        <use xlink:href="img/sprite.svg#copy"></use>
-                                    </svg>
-                                </a>
-                            </td>
+                        <tr>
+                            <td>2</td>
+                            <td class="company">ИП Несмашнев Роман Сергеевич</td>
+                            <td>4205314527</td>
+                            <td>37 МП-08-02/2020</td>
+                            <td class="type-doc">Мясная продукция, за исключением (полутуш 2 и 4 категории)</td>
+                            <td>27.01.2020</td>
+                            <td>31.12.2020</td>
+                            <td>Радченко Ольга</td>
                         </tr>
-                        <tr class="tender-box">
-                            <td class="tender-box__number color-red">
-                                <p>№1/17</p>
-                            </td>
-                            <td class="tender-box__name">
-                                <a href="#">
-                                    17.01 Технологический отход свиней (СВИНОМАТКИ) 48 голов Восточная зона - 1 машина
-                                </a>
-                            </td>
-                            <td class="tender-box__status">
-                                <div class="timer">
-                                    <div class="timer-box">
-                                        <div class="days timer-box__val"></div>
-                                        <div class="timer-box__text">дней</div>
-                                    </div>
 
-                                    <div class="timer-box">
-                                        <div class="hours timer-box__val"></div>
-                                        <div class="timer-box__text">часов</div>
-                                    </div>
-
-                                    <div class="timer-box">
-                                        <div class="minutes timer-box__val"></div>
-                                        <div class="timer-box__text">минут</div>
-                                    </div>
-
-                                    <div class="timer-box">
-                                        <div class="seconds timer-box__val"></div>
-                                        <div class="timer-box__text">секунд</div>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <a href="#" class="btn-copy">
-                                    <svg class="icon-copy">
-                                        <use xlink:href="img/sprite.svg#copy"></use>
-                                    </svg>
-                                </a>
-                            </td>
+                        <tr>
+                            <td>3</td>
+                            <td>ООО "ТАМБОВРЫБА"</td>
+                            <td>4205314527</td>
+                            <td>37 МП-08-02/2020</td>
+                            <td class="type-doc">Мясная продукция, за исключением (полутуш 2 и 4 категории)</td>
+                            <td>27.01.2020</td>
+                            <td>31.12.2020</td>
+                            <td>Радченко Ольга</td>
                         </tr>
-                        <tr class="tender-box">
-                            <td class="tender-box__number color-red">
-                                <p>№1/17</p>
-                            </td>
-                            <td class="tender-box__name">
-                                <a href="#">
-                                    17.01 Технологический отход свиней (СВИНОМАТКИ) 48 голов Восточная зона - 1 машина
-                                </a>
-                            </td>
-                            <td class="tender-box__status">
-                                <div class="timer">
-                                    <div class="timer-box">
-                                        <div class="days timer-box__val"></div>
-                                        <div class="timer-box__text">дней</div>
-                                    </div>
 
-                                    <div class="timer-box">
-                                        <div class="hours timer-box__val"></div>
-                                        <div class="timer-box__text">часов</div>
-                                    </div>
+                        <tr>
+                            <td>4</td>
+                            <td>ООО "ТАМБОВРЫБА"</td>
+                            <td>4205314527</td>
+                            <td>37 МП-08-02/2020</td>
+                            <td class="type-doc">Мясная продукция, за исключением (полутуш 2 и 4 категории)</td>
+                            <td>27.01.2020</td>
+                            <td>31.12.2020</td>
+                            <td>Радченко Ольга</td>
+                        </tr>
 
-                                    <div class="timer-box">
-                                        <div class="minutes timer-box__val"></div>
-                                        <div class="timer-box__text">минут</div>
-                                    </div>
+                        <tr>
+                            <td>5</td>
+                            <td>ООО "ТАМБОВРЫБА"</td>
+                            <td>4205314527</td>
+                            <td>37 МП-08-02/2020</td>
+                            <td class="type-doc">Мясная продукция, за исключением (полутуш 2 и 4 категории)</td>
+                            <td>27.01.2020</td>
+                            <td>31.12.2020</td>
+                            <td>Радченко Ольга</td>
+                        </tr>
 
-                                    <div class="timer-box">
-                                        <div class="seconds timer-box__val"></div>
-                                        <div class="timer-box__text">секунд</div>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <a href="#" class="btn-copy">
-                                    <svg class="icon-copy">
-                                        <use xlink:href="img/sprite.svg#copy"></use>
-                                    </svg>
-                                </a>
-                            </td>
+                        <tr>
+                            <td>6</td>
+                            <td>ООО "ТАМБОВРЫБА"</td>
+                            <td>4205314527</td>
+                            <td>37 МП-08-02/2020</td>
+                            <td class="type-doc">Мясная продукция, за исключением (полутуш 2 и 4 категории)</td>
+                            <td>27.01.2020</td>
+                            <td>31.12.2020</td>
+                            <td>Радченко Ольга</td>
+                        </tr>
+
+                        <tr>
+                            <td>7</td>
+                            <td>ООО "ТАМБОВРЫБА"</td>
+                            <td>4205314527</td>
+                            <td>37 МП-08-02/2020</td>
+                            <td class="type-doc">Мясная продукция, за исключением (полутуш 2 и 4 категории)</td>
+                            <td>27.01.2020</td>
+                            <td>31.12.2020</td>
+                            <td>Радченко Ольга</td>
+                        </tr>
+
+                        <tr>
+                            <td>8</td>
+                            <td>ООО "ТАМБОВРЫБА"</td>
+                            <td>4205314527</td>
+                            <td>37 МП-08-02/2020</td>
+                            <td class="type-doc">Мясная продукция, за исключением (полутуш 2 и 4 категории)</td>
+                            <td>27.01.2020</td>
+                            <td>31.12.2020</td>
+                            <td>Радченко Ольга</td>
+                        </tr>
+
+                        <tr>
+                            <td>9</td>
+                            <td>ООО "ТАМБОВРЫБА"</td>
+                            <td>4205314527</td>
+                            <td>37 МП-08-02/2020</td>
+                            <td class="type-doc">Мясная продукция, за исключением (полутуш 2 и 4 категории)</td>
+                            <td>27.01.2020</td>
+                            <td>31.12.2020</td>
+                            <td>Радченко Ольга</td>
+                        </tr>
+
+                        <tr>
+                            <td>10</td>
+                            <td>ООО "ТАМБОВРЫБА"</td>
+                            <td>4205314527</td>
+                            <td>37 МП-08-02/2020</td>
+                            <td class="type-doc">Мясная продукция, за исключением (полутуш 2 и 4 категории)</td>
+                            <td>27.01.2020</td>
+                            <td>31.12.2020</td>
+                            <td>Радченко Ольга</td>
+                        </tr>
+
+                        <tr>
+                            <td>11</td>
+                            <td>ООО "ТАМБОВРЫБА"</td>
+                            <td>4205314527</td>
+                            <td>37 МП-08-02/2020</td>
+                            <td class="type-doc">Мясная продукция, за исключением (полутуш 2 и 4 категории)</td>
+                            <td>27.01.2020</td>
+                            <td>31.12.2020</td>
+                            <td>Радченко Ольга</td>
+                        </tr>
+
+                        <tr>
+                            <td>12</td>
+                            <td>ООО "ТАМБОВРЫБА"</td>
+                            <td>4205314527</td>
+                            <td>37 МП-08-02/2020</td>
+                            <td class="type-doc">Мясная продукция, за исключением (полутуш 2 и 4 категории)</td>
+                            <td>27.01.2020</td>
+                            <td>31.12.2020</td>
+                            <td>Радченко Ольга</td>
+                        </tr>
+
+                        <tr>
+                            <td>13</td>
+                            <td>ООО "ТАМБОВРЫБА"</td>
+                            <td>4205314527</td>
+                            <td>37 МП-08-02/2020</td>
+                            <td class="type-doc">Мясная продукция, за исключением (полутуш 2 и 4 категории)</td>
+                            <td>27.01.2020</td>
+                            <td>31.12.2020</td>
+                            <td>Радченко Ольга</td>
+                        </tr>
+
+                        <tr>
+                            <td>14</td>
+                            <td>ООО "ТАМБОВРЫБА"</td>
+                            <td>4205314527</td>
+                            <td>37 МП-08-02/2020</td>
+                            <td class="type-doc">Мясная продукция, за исключением (полутуш 2 и 4 категории)</td>
+                            <td>27.01.2020</td>
+                            <td>31.12.2020</td>
+                            <td>Радченко Ольга</td>
+                        </tr>
+
+                        <tr>
+                            <td>15</td>
+                            <td>ООО "ТАМБОВРЫБА"</td>
+                            <td>4205314527</td>
+                            <td>37 МП-08-02/2020</td>
+                            <td class="type-doc">Мясная продукция, за исключением (полутуш 2 и 4 категории)</td>
+                            <td>27.01.2020</td>
+                            <td>31.12.2020</td>
+                            <td>Радченко Ольга</td>
                         </tr>
                     </tbody>
+
                 </table>
             </div>
 
+            <ul class="pagination">
+                <li><a href="#">Назад</a></li>
+                <li><a href="#" class="active">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">Вперед</a></li>
+            </ul>
         </div>
     </div>
 </div>
@@ -769,6 +919,7 @@
 <script src="js/sidebar.compact.js"></script>
 <script src="js/jquery.datetimepicker.full.min.js"></script>
 <script src="js/common.js"></script>
+
 
 </body>
 </html>

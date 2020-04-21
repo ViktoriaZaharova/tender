@@ -16,8 +16,10 @@
     <meta name="msapplication-navbutton-color" content="#000">
     <!-- iOS Safari -->
     <meta name="apple-mobile-web-app-status-bar-style" content="#000">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
 
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css"/>
@@ -48,7 +50,7 @@
                     </a>
                 </li>
 
-                <li class="nav-item active" data-item="law">
+                <li class="nav-item" data-item="law">
                     <a href="#" class="nav-links">
                         <svg>
                             <use xlink:href="img/sprite.svg#law"></use>
@@ -86,7 +88,7 @@
                         </svg>
                     </a>
                 </li>
-                <li class="nav-item" data-item="gear">
+                <li class="nav-item active" data-item="gear">
                     <a href="#" class="nav-links">
                         <svg>
                             <use xlink:href="img/sprite.svg#gear"></use>
@@ -425,7 +427,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a href="#" class="nav-links open">
+                        <a href="#" class="nav-links">
                             <svg class="icon">
                                 <use xlink:href="img/sprite.svg#add-user"></use>
                             </svg>
@@ -443,7 +445,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a href="#" class="nav-links">
+                        <a href="#" class="nav-links open">
                             <svg class="icon">
                                 <use xlink:href="img/sprite.svg#registration"></use>
                             </svg>
@@ -520,244 +522,67 @@
             </div>
         </header>
 
-        <div class="main-content upcoming-tender">
+        <div class="main-content settings registration-user">
             <div class="title-line">
-                <h1>Предстоящие аукционы</h1>
-
-                <a href="#" class="btn btn-red br-5">Посмотреть клиентов на странице</a>
+                <h1>Настройки пользователя</h1>
             </div>
 
+            <form class="form">
+                <label>
+                    <span class="form-group__title">Имя</span>
+                    <input type="text" name="name" placeholder="Иван">
+                </label>
 
-            <div class="table-responsive">
-                <table class="table-tender table">
-                    <thead>
-                        <tr>
-                            <th>Номер</th>
-                            <th>Наименование</th>
-                            <th>До начала аукциона</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="tender-box">
-                            <td class="tender-box__number color-red">
-                                <p>№1/17</p>
-                            </td>
-                            <td class="tender-box__name">
-                                <a href="#">
-                                    17.01 Технологический отход свиней (СВИНОМАТКИ) 48 голов Восточная зона - 1 машина
-                                </a>
-                            </td>
-                            <td class="tender-box__status">
-                                <div class="timer">
-                                    <div class="timer-box">
-                                        <div class="days timer-box__val"></div>
-                                        <div class="timer-box__text">дней</div>
-                                    </div>
+                <label>
+                    <span class="form-group__title">Фамилия</span>
+                    <input type="text" name="first_name" placeholder="Иванов">
+                </label>
 
-                                    <div class="timer-box">
-                                        <div class="hours timer-box__val"></div>
-                                        <div class="timer-box__text">часов</div>
-                                    </div>
+                <label>
+                    <span class="form-group__title">E-mail</span>
+                    <input type="text" name="mail">
+                </label>
 
-                                    <div class="timer-box">
-                                        <div class="minutes timer-box__val"></div>
-                                        <div class="timer-box__text">минут</div>
-                                    </div>
+                <div class="form-group">
+                    <span class="form-group__title">Уведомления на электронную почту</span>
 
-                                    <div class="timer-box">
-                                        <div class="seconds timer-box__val"></div>
-                                        <div class="timer-box__text">секунд</div>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <a href="#" class="btn-copy">
-                                    <svg class="icon-copy">
-                                        <use xlink:href="img/sprite.svg#copy"></use>
-                                    </svg>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr class="tender-box">
-                            <td class="tender-box__number color-red">
-                                <p>№1/17</p>
-                            </td>
-                            <td class="tender-box__name">
-                                <a href="#">
-                                    17.01 Технологический отход свиней (СВИНОМАТКИ) 48 голов Восточная зона - 1 машина
-                                </a>
-                            </td>
-                            <td class="tender-box__status">
-                                <div class="timer">
-                                    <div class="timer-box">
-                                        <div class="days timer-box__val"></div>
-                                        <div class="timer-box__text">дней</div>
-                                    </div>
+                    <ul class="list-checkbox">
+                        <li>
+                            <label class="checkbox">
+                                <input class="checkbox-inp" type="checkbox" name="checkbox">
+                                <span class="checkbox-custom"></span>
+                                <span class="label">Заявки по закупкам</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="checkbox">
+                                <input class="checkbox-inp" type="checkbox" name="checkbox">
+                                <span class="checkbox-custom"></span>
+                                <span class="label">Данные поставщиков</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="checkbox">
+                                <input class="checkbox-inp" type="checkbox" name="checkbox">
+                                <span class="checkbox-custom"></span>
+                                <span class="label">Заявки на регистрацию</span>
+                            </label>
+                        </li>
+                        <li>
+                            <label class="checkbox">
+                                <input class="checkbox-inp" type="checkbox" name="checkbox">
+                                <span class="checkbox-custom"></span>
+                                <span class="label">Отметить всё</span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
 
-                                    <div class="timer-box">
-                                        <div class="hours timer-box__val"></div>
-                                        <div class="timer-box__text">часов</div>
-                                    </div>
-
-                                    <div class="timer-box">
-                                        <div class="minutes timer-box__val"></div>
-                                        <div class="timer-box__text">минут</div>
-                                    </div>
-
-                                    <div class="timer-box">
-                                        <div class="seconds timer-box__val"></div>
-                                        <div class="timer-box__text">секунд</div>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <a href="#" class="btn-copy">
-                                    <svg class="icon-copy">
-                                        <use xlink:href="img/sprite.svg#copy"></use>
-                                    </svg>
-                                </a>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <h2 class="subtitle">Активные аукционы</h2>
-
-            <div class="table-responsive">
-                <table class="table-tender table">
-                    <thead>
-                        <tr>
-                            <th>Номер</th>
-                            <th>Наименование</th>
-                            <th>До начала аукциона</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="tender-box">
-                            <td class="tender-box__number color-red">
-                                <p>№1/17</p>
-                            </td>
-                            <td class="tender-box__name">
-                                <a href="#">
-                                    17.01 Технологический отход свиней (СВИНОМАТКИ) 48 голов Восточная зона - 1 машина
-                                </a>
-                            </td>
-                            <td class="tender-box__status">
-                                <div class="timer">
-                                    <div class="timer-box">
-                                        <div class="days timer-box__val"></div>
-                                        <div class="timer-box__text">дней</div>
-                                    </div>
-
-                                    <div class="timer-box">
-                                        <div class="hours timer-box__val"></div>
-                                        <div class="timer-box__text">часов</div>
-                                    </div>
-
-                                    <div class="timer-box">
-                                        <div class="minutes timer-box__val"></div>
-                                        <div class="timer-box__text">минут</div>
-                                    </div>
-
-                                    <div class="timer-box">
-                                        <div class="seconds timer-box__val"></div>
-                                        <div class="timer-box__text">секунд</div>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <a href="#" class="btn-copy">
-                                    <svg class="icon-copy">
-                                        <use xlink:href="img/sprite.svg#copy"></use>
-                                    </svg>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr class="tender-box">
-                            <td class="tender-box__number color-red">
-                                <p>№1/17</p>
-                            </td>
-                            <td class="tender-box__name">
-                                <a href="#">
-                                    17.01 Технологический отход свиней (СВИНОМАТКИ) 48 голов Восточная зона - 1 машина
-                                </a>
-                            </td>
-                            <td class="tender-box__status">
-                                <div class="timer">
-                                    <div class="timer-box">
-                                        <div class="days timer-box__val"></div>
-                                        <div class="timer-box__text">дней</div>
-                                    </div>
-
-                                    <div class="timer-box">
-                                        <div class="hours timer-box__val"></div>
-                                        <div class="timer-box__text">часов</div>
-                                    </div>
-
-                                    <div class="timer-box">
-                                        <div class="minutes timer-box__val"></div>
-                                        <div class="timer-box__text">минут</div>
-                                    </div>
-
-                                    <div class="timer-box">
-                                        <div class="seconds timer-box__val"></div>
-                                        <div class="timer-box__text">секунд</div>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <a href="#" class="btn-copy">
-                                    <svg class="icon-copy">
-                                        <use xlink:href="img/sprite.svg#copy"></use>
-                                    </svg>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr class="tender-box">
-                            <td class="tender-box__number color-red">
-                                <p>№1/17</p>
-                            </td>
-                            <td class="tender-box__name">
-                                <a href="#">
-                                    17.01 Технологический отход свиней (СВИНОМАТКИ) 48 голов Восточная зона - 1 машина
-                                </a>
-                            </td>
-                            <td class="tender-box__status">
-                                <div class="timer">
-                                    <div class="timer-box">
-                                        <div class="days timer-box__val"></div>
-                                        <div class="timer-box__text">дней</div>
-                                    </div>
-
-                                    <div class="timer-box">
-                                        <div class="hours timer-box__val"></div>
-                                        <div class="timer-box__text">часов</div>
-                                    </div>
-
-                                    <div class="timer-box">
-                                        <div class="minutes timer-box__val"></div>
-                                        <div class="timer-box__text">минут</div>
-                                    </div>
-
-                                    <div class="timer-box">
-                                        <div class="seconds timer-box__val"></div>
-                                        <div class="timer-box__text">секунд</div>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <a href="#" class="btn-copy">
-                                    <svg class="icon-copy">
-                                        <use xlink:href="img/sprite.svg#copy"></use>
-                                    </svg>
-                                </a>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
+                <div class="btn-group">
+                    <button type="button" class="btn btn-red">Сохранить</button>
+                    <button type="button" class="btn btn-grey">Выход</button>
+                </div>
+            </form>
         </div>
     </div>
 </div>
@@ -769,6 +594,7 @@
 <script src="js/sidebar.compact.js"></script>
 <script src="js/jquery.datetimepicker.full.min.js"></script>
 <script src="js/common.js"></script>
+
 
 </body>
 </html>

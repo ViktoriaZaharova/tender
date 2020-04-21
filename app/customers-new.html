@@ -48,7 +48,7 @@
                     </a>
                 </li>
 
-                <li class="nav-item active" data-item="law">
+                <li class="nav-item" data-item="law">
                     <a href="#" class="nav-links">
                         <svg>
                             <use xlink:href="img/sprite.svg#law"></use>
@@ -79,7 +79,7 @@
                         </svg>
                     </a>
                 </li>
-                <li class="nav-item" data-item="salesman">
+                <li class="nav-item active" data-item="salesman">
                     <a href="#" class="nav-links">
                         <svg>
                             <use xlink:href="img/sprite.svg#salesman"></use>
@@ -520,247 +520,140 @@
             </div>
         </header>
 
-        <div class="main-content upcoming-tender">
+        <div class="main-content customers-new">
             <div class="title-line">
-                <h1>Предстоящие аукционы</h1>
-
-                <a href="#" class="btn btn-red br-5">Посмотреть клиентов на странице</a>
+                <h1>Новые клиенты</h1>
             </div>
 
 
             <div class="table-responsive">
-                <table class="table-tender table">
+                <table class="table-add-tender table table-customers table-customers-new">
                     <thead>
                         <tr>
-                            <th>Номер</th>
-                            <th>Наименование</th>
-                            <th>До начала аукциона</th>
+                            <th>ID</th>
+                            <th>Компания</th>
+                            <th colspan="2">
+                                Дата рег.</th>
+
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="tender-box">
-                            <td class="tender-box__number color-red">
-                                <p>№1/17</p>
-                            </td>
-                            <td class="tender-box__name">
-                                <a href="#">
-                                    17.01 Технологический отход свиней (СВИНОМАТКИ) 48 голов Восточная зона - 1 машина
-                                </a>
-                            </td>
-                            <td class="tender-box__status">
-                                <div class="timer">
-                                    <div class="timer-box">
-                                        <div class="days timer-box__val"></div>
-                                        <div class="timer-box__text">дней</div>
-                                    </div>
-
-                                    <div class="timer-box">
-                                        <div class="hours timer-box__val"></div>
-                                        <div class="timer-box__text">часов</div>
-                                    </div>
-
-                                    <div class="timer-box">
-                                        <div class="minutes timer-box__val"></div>
-                                        <div class="timer-box__text">минут</div>
-                                    </div>
-
-                                    <div class="timer-box">
-                                        <div class="seconds timer-box__val"></div>
-                                        <div class="timer-box__text">секунд</div>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <a href="#" class="btn-copy">
-                                    <svg class="icon-copy">
-                                        <use xlink:href="img/sprite.svg#copy"></use>
-                                    </svg>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr class="tender-box">
-                            <td class="tender-box__number color-red">
-                                <p>№1/17</p>
-                            </td>
-                            <td class="tender-box__name">
-                                <a href="#">
-                                    17.01 Технологический отход свиней (СВИНОМАТКИ) 48 голов Восточная зона - 1 машина
-                                </a>
-                            </td>
-                            <td class="tender-box__status">
-                                <div class="timer">
-                                    <div class="timer-box">
-                                        <div class="days timer-box__val"></div>
-                                        <div class="timer-box__text">дней</div>
-                                    </div>
-
-                                    <div class="timer-box">
-                                        <div class="hours timer-box__val"></div>
-                                        <div class="timer-box__text">часов</div>
-                                    </div>
-
-                                    <div class="timer-box">
-                                        <div class="minutes timer-box__val"></div>
-                                        <div class="timer-box__text">минут</div>
-                                    </div>
-
-                                    <div class="timer-box">
-                                        <div class="seconds timer-box__val"></div>
-                                        <div class="timer-box__text">секунд</div>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <a href="#" class="btn-copy">
-                                    <svg class="icon-copy">
-                                        <use xlink:href="img/sprite.svg#copy"></use>
-                                    </svg>
-                                </a>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <h2 class="subtitle">Активные аукционы</h2>
-
-            <div class="table-responsive">
-                <table class="table-tender table">
-                    <thead>
                         <tr>
-                            <th>Номер</th>
-                            <th>Наименование</th>
-                            <th>До начала аукциона</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="tender-box">
-                            <td class="tender-box__number color-red">
-                                <p>№1/17</p>
-                            </td>
-                            <td class="tender-box__name">
-                                <a href="#">
-                                    17.01 Технологический отход свиней (СВИНОМАТКИ) 48 голов Восточная зона - 1 машина
-                                </a>
-                            </td>
-                            <td class="tender-box__status">
-                                <div class="timer">
-                                    <div class="timer-box">
-                                        <div class="days timer-box__val"></div>
-                                        <div class="timer-box__text">дней</div>
-                                    </div>
-
-                                    <div class="timer-box">
-                                        <div class="hours timer-box__val"></div>
-                                        <div class="timer-box__text">часов</div>
-                                    </div>
-
-                                    <div class="timer-box">
-                                        <div class="minutes timer-box__val"></div>
-                                        <div class="timer-box__text">минут</div>
-                                    </div>
-
-                                    <div class="timer-box">
-                                        <div class="seconds timer-box__val"></div>
-                                        <div class="timer-box__text">секунд</div>
-                                    </div>
+                            <td>3008</td>
+                            <td>ИП Сиротин Алексей Александрович</td>
+                            <td>11.03.2020 15:43:34	</td>
+                            <td class="p0">
+                                <div class="btn-group">
+                                    <a href="#" class="btn btn-green">Подробно</a>
+                                    <a href="#modal1" class="btn btn-blue open_modal">Принять</a>
+                                    <a href="#modal2" class="btn btn-red open_modal">Отклонить</a>
                                 </div>
                             </td>
-                            <td>
-                                <a href="#" class="btn-copy">
-                                    <svg class="icon-copy">
-                                        <use xlink:href="img/sprite.svg#copy"></use>
-                                    </svg>
-                                </a>
-                            </td>
                         </tr>
-                        <tr class="tender-box">
-                            <td class="tender-box__number color-red">
-                                <p>№1/17</p>
-                            </td>
-                            <td class="tender-box__name">
-                                <a href="#">
-                                    17.01 Технологический отход свиней (СВИНОМАТКИ) 48 голов Восточная зона - 1 машина
-                                </a>
-                            </td>
-                            <td class="tender-box__status">
-                                <div class="timer">
-                                    <div class="timer-box">
-                                        <div class="days timer-box__val"></div>
-                                        <div class="timer-box__text">дней</div>
-                                    </div>
-
-                                    <div class="timer-box">
-                                        <div class="hours timer-box__val"></div>
-                                        <div class="timer-box__text">часов</div>
-                                    </div>
-
-                                    <div class="timer-box">
-                                        <div class="minutes timer-box__val"></div>
-                                        <div class="timer-box__text">минут</div>
-                                    </div>
-
-                                    <div class="timer-box">
-                                        <div class="seconds timer-box__val"></div>
-                                        <div class="timer-box__text">секунд</div>
-                                    </div>
+                        <tr>
+                            <td>3006</td>
+                            <td>ИП Колесник Ю.В.</td>
+                            <td>27.03.2020 15:11:18</td>
+                            <td class="p0">
+                                <div class="btn-group">
+                                    <a href="#" class="btn btn-green">Подробно</a>
+                                    <a href="#modal1" class="btn btn-blue open_modal">Принять</a>
+                                    <a href="#modal2" class="btn btn-red open_modal">Отклонить</a>
                                 </div>
-                            </td>
-                            <td>
-                                <a href="#" class="btn-copy">
-                                    <svg class="icon-copy">
-                                        <use xlink:href="img/sprite.svg#copy"></use>
-                                    </svg>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr class="tender-box">
-                            <td class="tender-box__number color-red">
-                                <p>№1/17</p>
-                            </td>
-                            <td class="tender-box__name">
-                                <a href="#">
-                                    17.01 Технологический отход свиней (СВИНОМАТКИ) 48 голов Восточная зона - 1 машина
-                                </a>
-                            </td>
-                            <td class="tender-box__status">
-                                <div class="timer">
-                                    <div class="timer-box">
-                                        <div class="days timer-box__val"></div>
-                                        <div class="timer-box__text">дней</div>
-                                    </div>
-
-                                    <div class="timer-box">
-                                        <div class="hours timer-box__val"></div>
-                                        <div class="timer-box__text">часов</div>
-                                    </div>
-
-                                    <div class="timer-box">
-                                        <div class="minutes timer-box__val"></div>
-                                        <div class="timer-box__text">минут</div>
-                                    </div>
-
-                                    <div class="timer-box">
-                                        <div class="seconds timer-box__val"></div>
-                                        <div class="timer-box__text">секунд</div>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>
-                                <a href="#" class="btn-copy">
-                                    <svg class="icon-copy">
-                                        <use xlink:href="img/sprite.svg#copy"></use>
-                                    </svg>
-                                </a>
                             </td>
                         </tr>
                     </tbody>
+
                 </table>
             </div>
+
 
         </div>
     </div>
 </div>
+
+<div class="modal__div modal-request" id="modal1">
+    <div class="modal__wrapper">
+        <div class="modal__close"><svg class="icon-close"><use xlink:href="img/sprite.svg#close"></use></svg></div>
+        <h2>ПРИНЯТЬ ЗАЯВКУ</h2>
+
+        <form method="post" class="form">
+
+            <label>
+                <span class="form-group__title">№ договора</span>
+                <input type="text" name="doc">
+            </label>
+
+            <label>
+                <span class="form-group__title">Вид тендера</span>
+                <select name="select" class="select">
+                    <option value="Мясная продукция, за исключением ( полутуш 2 и 4 котегории">Мясная продукция, за исключением ( полутуш 2 и 4 котегории</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </label>
+
+            <label>
+                <span class="form-group__title">Условия оплаты</span>
+                <select name="select" class="select">
+                    <option value="Отсрочка">Отсрочка</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </label>
+
+            <label>
+                <span class="form-group__title">Дата начала договора</span>
+                <select name="select" class="select select-date">
+                    <option value="Выберите дату">Выберите дату</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </label>
+
+            <label>
+                <span class="form-group__title">№ договора</span>
+                <select name="select" class="select select-date">
+                    <option value="Выберите дату">Выберите дату</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </label>
+
+            <label class="checkbox">
+                <input class="checkbox-inp" type="checkbox" name="checkbox">
+                <span class="checkbox-custom"></span>
+                <span class="label">Автоматическая пролонгация</span>
+            </label>
+
+            <label>
+                <span class="form-group__title">Ответственный менеджер клиента</span>
+                <select name="select" class="select">
+                    <option value="Наталья Чернова">Наталья Чернова</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </label>
+
+            <button type="submit" class="btn-red">Принять</button>
+        </form>
+    </div>
+</div>
+
+<div class="modal__div" id="modal2">
+    <div class="modal__wrapper">
+        <div class="modal__close"><svg class="icon-close"><use xlink:href="img/sprite.svg#close"></use></svg></div>
+        <h2>ПРИЧИНЫ ОТКЛОНЕНИЯ ЗАЯВКИ</h2>
+
+        <form method="post" class="form">
+
+            <label><input type="text" name="text" placeholder="Введите причину отклонения заявки"></label>
+
+            <button type="submit" class="btn-red">Отклонить</button>
+        </form>
+    </div>
+</div>
+<div class="overlay"></div><!-- Пoдлoжкa -->
 
 
 <script src="js/jquery.min.js"></script>
@@ -769,6 +662,7 @@
 <script src="js/sidebar.compact.js"></script>
 <script src="js/jquery.datetimepicker.full.min.js"></script>
 <script src="js/common.js"></script>
+
 
 </body>
 </html>

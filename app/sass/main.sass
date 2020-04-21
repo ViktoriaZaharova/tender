@@ -90,6 +90,7 @@ a
   text-decoration: none
   outline: none
   box-sizing: border-box
+
   &:hover
     text-decoration: none
 
@@ -117,6 +118,7 @@ input
   font-size: 15px
   color: #9D9D9D
   padding: 0 9px
+
   &::placeholder
     color: #9D9D9D
 
@@ -142,26 +144,37 @@ h1, .subtitle
 
 .btn-green
   background: #8CC152
+
   &:hover
     background: #709942
 
 .btn-grey
   background: #7B7B7B
+
   &:hover
     background: #6e6e6e
 
 .btn-red
   background: #A52417
   font-size: 15px
+
   &:hover
     background: #d02d1d
+
+.btn-blue
+  background: #344563
+
+  &:hover
+    background: #4e6794
 
 .btn-group
   display: flex
   align-items: center
   flex-wrap: wrap
+
   .btn
     margin: 0 17px 0 0
+
     &:last-child
       margin: 0
 
@@ -176,6 +189,9 @@ h1, .subtitle
 
 .w-100
   width: 100%
+
+.p0
+  padding: 0
 
 .wrapper
   width: 100%
@@ -196,6 +212,7 @@ h1, .subtitle
   height: 100%
   text-align: center
   width: 79px
+
   .nav-item
     cursor: pointer
     border:
@@ -204,6 +221,7 @@ h1, .subtitle
     display: block
     position: relative
     height: 65px
+
   .active
     border:
       left: 3px solid #fff
@@ -214,6 +232,7 @@ h1, .subtitle
   display: block
   fill: #fff
   padding: 13px 0
+
   svg
     width: 100%
     height: 100%
@@ -254,6 +273,7 @@ h1, .subtitle
 
 .submenu-area__menu
   width: 100%
+
   .nav-links
     width: 100%
     display: flex
@@ -261,6 +281,7 @@ h1, .subtitle
     padding: 13px 25px
     color: #717171
     font-size: 13px
+
     .icon
       width: 20px
       height: 20px
@@ -268,8 +289,10 @@ h1, .subtitle
       align-items: center
       justify-content: center
       margin: 0 8px 0 0
+
     &:hover
       background: #EEEEEE
+
   .open
     background: #EEEEEE
 
@@ -303,8 +326,10 @@ h1, .subtitle
   color: #717171
   font-size: 10px
   margin: 0 0 14px
+
   &:last-child
     margin: 0
+
   &__icon
     min-width: 22px
     width: 22px
@@ -313,6 +338,7 @@ h1, .subtitle
     align-items: center
     justify-content: center
     margin: 0 6px 0 0
+
   &:hover
     color: #A52417
 
@@ -351,6 +377,7 @@ h1, .subtitle
   align-items: center
   cursor: pointer
   width: 34px
+
   div
     display: block
     width: 100%
@@ -358,6 +385,7 @@ h1, .subtitle
     background: #000
     margin: 0 0 8px
     border-radius: 3px
+
     &:last-child
       margin: 0
 
@@ -372,13 +400,17 @@ header
   margin: 0 0 0 57px
   display: flex
   align-items: center
+
   li
     margin: 0 40px 0 0
+
     &:last-child
       margin: 0
+
     a
       color: #717171
       font-size: 15px
+
       &:hover
         color: #000
 
@@ -388,6 +420,7 @@ header
   margin: 0 0 0 auto
   font-size: 12px
   color: #8B8B8B
+
   span
     margin: 0 0 0 3px
 
@@ -407,6 +440,7 @@ header
   display: flex
   align-items: center
   flex-wrap: wrap
+
   h3
     width: 100%
     margin: 0 0 11px
@@ -419,8 +453,10 @@ header
   width: 100%
   position: relative
   margin: 0 0 22px
+
   label
     width: 100%
+
     input
       padding: 0 30px 0 9px
 
@@ -434,6 +470,7 @@ header
     justify-content: center
     right: 10px
     bottom: 6px
+
     svg
       width: 100%
       height: 100%
@@ -446,15 +483,20 @@ header
 
   border:
     top: 1px solid #717171
+
   &:last-child
     border:
       bottom: 1px solid #717171
+
   .btn-copy
     margin: 0 0 0 auto
+
   td
     vertical-align: middle
+
   a
     color: #7B7B7B
+
     &:hover
       color: #000
 
@@ -467,6 +509,7 @@ header
   justify-content: center
   width: 30px
   height: 30px
+
   svg
     width: 100%
     height: 100%
@@ -476,8 +519,10 @@ header
   align-items: center
   flex-wrap: wrap
   margin: 34px 0 0 0
+
   li
     margin: 0 13px 0 0
+
     &:first-child, &:last-child
       a
         background: transparent
@@ -487,8 +532,10 @@ header
         height: 44px
         color: #7B7B7B
         font-size: 15px
+
     &:last-child
       margin: 0
+
     a
       display: flex
       align-items: center
@@ -500,6 +547,7 @@ header
       height: 44px
       color: #FFFFFF
       font-size: 20px
+
     .active
       background: #A52417
 
@@ -526,6 +574,7 @@ header
 //add tender page
 .form-tender
   margin: 23px 0 19px
+
   label
     margin: 0 0 19px
 
@@ -541,9 +590,11 @@ header
   align-items: flex-start
   flex-wrap: wrap
   justify-content: space-between
+
   label
     max-width: 145px
     width: 100%
+
   .label-max
     max-width: 630px
 
@@ -557,40 +608,50 @@ header
   margin: 0 0 30px
   border-radius: 5px
   overflow: hidden
+
   thead
     text-align: left
     font-size: 12px
     font-weight: bold
     color: #fff
     background: #A2ABBA
+
     .btn-group
       display: flex
       flex-direction: row
       justify-content: flex-end
       flex-wrap: nowrap
       padding: 0
+
       .btn-delete
         width: 70px
         height: 54px
+
       .btn-green
         width: 183px
         height: 54px
         margin: 0
+
     tr
       width: 100%
+
       th
         vertical-align: middle
         padding: 9px 10px
+
         h3
           font-size: 16px
+
   tbody
     border-bottom: 3px solid #E3E4E8
     color: #A4A9AE
     font-size: 12px
     line-height: 21px
+
     tr
       &:nth-child(even)
         background: #F6F8FA
+
       td
         padding: 19px 11px
 
@@ -616,16 +677,19 @@ header
 //page day tender
 .description-tender
   width: 100%
+
   h3
     margin: 0 0 11px
     color: #ABADB3
     font-size: 15px
+
   .btn-group
     width: 100%
     display: flex
     align-items: center
     justify-content: flex-start
     flex-wrap: wrap
+
     .btn
       height: 54px
       font-size: 15px
@@ -643,6 +707,7 @@ header
   align-items: flex-start
   justify-content: flex-start
   flex-wrap: wrap
+
   .w-100
     width: 100%
 
@@ -653,6 +718,7 @@ header
   margin: 0 0 33px 0
   width: 20%
   padding: 0 19px 0 0
+
   h4
     color: #A52417
     margin: 0 0 17px
@@ -682,6 +748,7 @@ header
   position: relative
   margin: 0 5px 0 0
   padding: 0 15px 0 0
+
   &:before
     content: ':'
     position: absolute
@@ -691,6 +758,7 @@ header
     font-size: 36px
     font-weight: bold
     line-height: 1
+
   &:last-child
     &:before
       display: none
@@ -706,14 +774,18 @@ header
   .title-line
     .btn
       width: 304px
+
   .table-responsive
     margin: 26px 0 46px 0
+
     &:last-child
       margin-bottom: 0
+
     thead
       text-align: left
       color: #717171
       font-size: 10px
+
       th
         padding: 0 9px 7px
 
@@ -722,17 +794,22 @@ header
   .title-line
     border: none
     padding: 0
+
   .description-tender__content
     border-bottom: 1px solid #717171
     margin: 0 0 32px
+
   .btn-group
     .btn
       width: 307px
+
   .timer-box__val
     color: #A52417
+
   .timer-box
     &:before
       color: #A52417
+
   .timer-wrapper
     h4
       color: #717171
@@ -756,24 +833,33 @@ header
   align-items: stretch
   justify-content: space-between
   flex-wrap: wrap
+
   .auction-wrapper__box
     width: 50%
+
   .auction-wrapper__box-two
     background: #EBEBEB
+
     .description-tender__content
       padding: 28px 9px 0
+
       .description-tender__box
         width: 50%
         margin: 0 0 40px
+
   .description-tender__content
     border: none
     margin: 0
+
   .table-responsive
     margin: 0
+
     thead
       border-bottom: 1px solid #717171
+
     table
       color: #7B7B7B
+
       td
         padding: 23px 9px 10px
         font-size: 14px
@@ -785,6 +871,671 @@ header
 
 .auction-wrapper__box-one
   margin: 0 0 100px
+
+
+//auction add page
+.add-auction__content
+  .form-wrapper
+    justify-content: flex-start
+
+    label
+      margin: 0 17px 19px 0
+
+    .label-date
+      max-width: 303px
+
+.auction-table
+  width: 100%
+  background: #F6F8FA
+
+.auction-table__head
+  width: 100%
+  box-shadow: 0 3px 0 #7B8493
+  background: #A2ABBA
+  border-radius: 5px 5px 0 0
+  padding: 22px 10px 13px
+  font-weight: bold
+  color: #fff
+
+.auction-table__body
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  padding: 25px 10px 240px
+
+  h3
+    width: 100%
+    color: #525252
+    font-weight: bold
+    margin: 0 0 14px
+
+  .form-group
+    display: flex
+    align-items: center
+    width: 454px
+
+    input
+      background: transparent
+
+  .form-group__quantity
+    width: auto
+
+  .form-group__article
+    width: 290px
+
+.row
+  width: 100%
+  display: flex
+  align-items: flex-start
+  justify-content: flex-start
+  flex-wrap: wrap
+
+
+.auction-table__box
+  margin: 0 30px 24px 0
+  &:last-child
+    margin-right: 0
+
+.select
+  border-radius: 5px
+  width: 130px
+  border: 2px solid #E3E4E8
+  height: 36px
+  appearance: none
+  -webkit-appearance: none
+  -moz-appearance: none
+  background: transparent url("../img/arrow-bottom.svg") no-repeat 95% center
+    size: 14px
+  padding: 0 9px
+  box-shadow: none
+  outline: none
+  &:hover, &:focus
+    outline: none
+    box-shadow: none
+
+.form-group__quantity
+  input
+    width: 130px
+    height: 36px
+    margin: 0 30px 0 0
+
+//customers page
+.customers
+  .pagination
+    margin: 22px 0 0 0
+
+.drop-wrapper
+  position: relative
+  margin: 0 0 22px
+  cursor: pointer
+
+.dropDown-item.open
+  .icon-arrow
+    transform: rotate(-90deg)
+
+
+.dropDown-item
+  display: flex
+  align-items: center
+
+  h3
+    width: auto
+    color: #A52417
+    text-transform: none
+    margin: 0
+  .icon-arrow
+    transition: .3s ease
+    margin: 0 7px 0 10px
+
+.dropDown
+  display: none
+  position: absolute
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2)
+  background: #FFFFFF
+  width: 153px
+  left: 100%
+  z-index: 10
+  top: -13px
+  padding: 17px 0
+  a
+    margin: 0 auto 7px
+    width: 100%
+    &:last-child
+      margin: 0 auto
+  .btn
+    width: 120px
+    height: 20px
+    font-size: 9px
+
+.links-dropDown
+  color: #A4A9AE
+  font-size: 9px
+  line-height: 17px
+  width: 100%
+  margin: 0 0 7px
+  position: relative
+  padding: 0 16px
+  p
+    width: 100%
+
+.links-dropDown.active
+  color: #000
+
+
+.dropDown-subMenu
+  position: absolute
+  left: 100%
+  top: -17px
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2)
+  background: #fff
+  z-index: 12
+  width: 168px
+  font-family: 'Open Sans', sans-serif
+  display: none
+
+.dropDown-subMenu__type
+  width: 202px
+
+.list-checkbox
+  width: 100%
+  li
+    padding: 5px 8px
+    width: 100%
+    &:nth-child(odd)
+      background: #F6F8FA
+
+.checkbox
+  display: flex
+  align-items: center
+  justify-content: flex-start
+  width: 100%
+  &-inp
+    display: none
+  &-custom
+    position: relative
+    border: 1px solid #A4A9AE
+      radius: 3px
+    width: 14px
+    height: 14px
+    min-width: 14px
+    display: inline-block
+    margin: 0 8px 0 0
+    cursor: pointer
+    transition: .3s ease
+    &:before
+      content: ''
+      position: absolute
+      width: 9px
+      height: 9px
+      transition: .3s ease
+      top: 50%
+      left: 50%
+      transform: translate(-50%,-50%)
+      background: url("../img/check.svg") no-repeat center
+        size: contain
+      opacity: 0
+  .label
+    color: #A4A9AE
+    font-size: 9px
+    line-height: 10px
+  .checkbox-inp:checked + .checkbox-custom
+    &:before
+      opacity: 1
+
+
+.radio
+  display: flex
+  align-items: center
+  justify-content: flex-start
+  width: 100%
+  &-inp
+    display: none
+  &-custom
+    position: relative
+    border: 2px solid #6B6B6B
+      radius: 4px
+    width: 24px
+    height: 24px
+    min-width: 24px
+    display: inline-block
+    margin: 0 11px 0 0
+    cursor: pointer
+    transition: .3s ease
+    &:before
+      content: ''
+      position: absolute
+      width: 8px
+      height: 8px
+      transition: .3s ease
+      top: 50%
+      left: 50%
+      transform: translate(-50%,-50%)
+      border-radius: 50%
+      background: #C82521
+      opacity: 0
+  .label
+    color: #6B6B6B
+    font-weight: 500
+    font-size: 13px
+    font-family: 'Montserrat', sans-serif
+  .radio-inp:checked + .radio-custom
+    &:before
+      opacity: 1
+
+.list-radio
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  li
+    margin: 0 50px 18px 0
+    &:last-child
+      margin: 0 0 18px
+
+
+.table-customers
+  border-radius: 0
+  margin: 0
+  tr
+    td
+      font-size: 11px
+      line-height: 15px
+  thead
+    border-bottom: 2px solid #93999E
+    tr
+      font-size: 12px
+      th
+        padding: 10px 10px
+  tbody
+    border: none
+    tr
+      td
+        padding: 6px 10px
+        vertical-align: middle
+  .type-doc
+    width: 200px
+    white-space: normal
+  .company
+    width: 140px
+    white-space: normal
+
+//customers new page
+.table-customers-new
+  margin: 28px 0 0 0
+  width: calc(100% - 57px)
+  .btn
+    font-weight: normal
+    font-size: 16px
+    width: 244px
+    height: 48px
+    margin: 0
+  .p0
+    padding: 0
+  .btn-group
+    justify-content: flex-end
+
+
+//modal
+.modal__div
+  position: fixed
+  width: 414px
+  height: 100%
+  top: 45%
+  left: 50%
+  transform: translate(-50%, -50%)
+  z-index: 101
+  overflow: auto
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  display: none
+  opacity: 0
+
+  .modal__close
+    position: absolute
+    right: 14px
+    top: 21px
+    width: 22px
+    height: 22px
+    display: flex
+    align-items: center
+    justify-content: center
+    cursor: pointer
+  .modal__wrapper
+    background: #EAEAEA
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2)
+    width: 100%
+    height: auto
+    overflow: auto
+    margin: 50px 0
+    padding: 36px 26px 46px
+    box-sizing: border-box
+    position: relative
+    font-family: 'Montserrat', sans-serif
+    h2
+      color: #656565
+      font-weight: 500
+      margin: 0 auto 25px
+      font-size: 13px
+      text-align: center
+      font-family: 'Montserrat', sans-serif
+  select
+    width: 100%
+    background: #fff url("../img/arrow-bottom.svg") no-repeat 97% center
+      size: 13px
+    border: none
+    padding: 0 26px 0 13px
+    color: #6B6B6B
+    font-size: 13px
+    font-weight: 500
+    font-family: 'Montserrat', sans-serif
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15)
+    &::placeholder
+      color: #6B6B6B
+  .select-date
+    color: #A4A9AE
+    &::placeholder
+      color: #A4A9AE
+
+.modal-request
+  .form
+    label
+      margin: 0 0 10px
+    button
+      margin: 38px auto 0
+    .checkbox
+      margin: 20px 0 19px
+      .label
+        color: #000000
+        font-size: 13px
+        font-weight: 500
+
+
+.form
+  label
+    width: 100%
+    margin: 0 auto 33px
+    input
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15)
+      border: none
+      padding: 0 13px
+      color: #6B6B6B
+      font-size: 13px
+  button
+    width: 100%
+    text-align: center
+    color: #fff
+    //background: #930B08
+    border-radius: 5px
+    height: 48px
+    font-size: 25px
+    font-weight: normal
+    font-family: 'Montserrat', sans-serif
+  .form-group__title
+    color: #ADADAD
+    font-weight: 500
+    font-size: 13px
+    margin: 0 0 5px
+
+.overlay
+  z-index: 100
+  position: fixed
+  background-color: #000
+  opacity: 0.2
+  -moz-opacity: 0.2
+  filter: alpha(opacity = 20)
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
+  cursor: pointer
+  display: none
+
+//customers-details
+.table-customers-details
+  color: #717171
+  font-size: 11px
+  font-family: 'Open Sans', sans-serif
+  font-weight: normal
+  tr
+    &:nth-child(even)
+      background: #F6F8FA
+    td
+      padding: 15px 35px
+      vertical-align: middle
+
+.file-wrapper
+  display: flex
+  align-items: center
+  a
+    color: #6B6B6B
+    margin: 0 10px 0 0
+    &:last-child
+      margin: 0
+    &:hover
+      color: #000
+
+//page registration
+.tabs__content
+  display: none /* по умолчанию прячем все блоки */
+  flex-direction: column
+  align-items: flex-start
+  padding: 30px 0 0
+
+.tabs__content.active
+    display: block /* по умолчанию показываем нужный блок */
+
+.tabs
+  width: 100%
+  margin: 56px 0 0 0
+  max-width: 1273px
+
+.registration-user
+  .form
+    font-family: 'Montserrat', sans-serif
+    width: 100%
+    input
+      box-shadow: none
+      border: 2px solid #E3E4E8
+      height: 43px
+      width: calc(100% - 303px)
+    label
+      margin: 0 0 17px
+      flex-direction: row
+      display: flex
+      align-items: center
+    .form-group__title
+      width: 303px
+      color: #6B6B6B
+      font-size: 13px
+      font-weight: normal
+      margin: 0
+      padding: 0 10px 0 0
+      box-sizing: border-box
+    button
+      font-size: 16px
+      font-weight: normal
+      font-family: $default-font
+      margin: 38px 0 0 auto
+      width: calc(100% - 303px)
+    .field__file-wrapper
+      margin: 0
+  .form-group
+    display: flex
+    align-items: center
+    margin: 0 0 17px
+  .form-contract
+    .line-bottom
+      .checkbox
+        margin: 0
+        color: #6B6B6B
+        width: 303px
+        .label
+          font-size: 13px
+          line-height: normal
+          color: #6B6B6B
+    input, button
+      max-width: 404px
+    button
+      margin: 17px 0 0 303px
+    .btn-close
+      width: 22px
+      height: 22px
+      margin: 0 -60px 20px auto
+      cursor: pointer
+      svg
+        width: 100%
+        height: 100%
+  .form-contract__ip
+    input
+      max-width: none
+
+.contract-wrapper
+  border-bottom: 1px solid #717171
+  margin: 0 0 17px
+
+.contract-wrapper.no-border
+  border: none
+  margin: 0
+
+
+.add-contract
+  width: 173px
+  height: 43px
+  font-size: 13px
+  font-weight: 500
+  font-family: 'Montserrat', sans-serif
+
+.list-wrapper
+  width: calc(100% - 303px)
+  border: 2px solid #E3E4E8
+    radius: 5px
+  height: 102px
+  overflow-y: auto
+  padding: 12px 0
+  li
+    a
+      width: 100%
+      padding: 0 16px
+      color: #717171
+      font-size: 13px
+      font-weight: 500
+      line-height: 16px
+      font-family: 'Montserrat', sans-serif
+      &:hover
+        background: #E3E4E8
+    .active
+      background: #E3E4E8
+
+.tabs__caption
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+
+  li
+    margin: 0 20px 20px 0
+    background: #C4C4C4
+    border-radius: 5px
+    width: 303px
+    height: 48px
+    font-size: 13px
+    text-align: center
+    display: flex
+    align-items: center
+    justify-content: center
+    color: #fff
+    cursor: pointer
+    transition: .3s ease
+    &:hover
+      background: #7B7B7B
+    &:last-child
+      margin-right: 0
+  .active
+    background: #7B7B7B
+
+
+//input file
+.field__wrapper
+  width: calc(100% - 303px)
+  position: relative
+  text-align: center
+
+
+
+.field__file
+  opacity: 0
+  visibility: hidden
+  position: absolute
+  left: 0
+  top: 0
+
+.field__file-wrapper
+  width: 100%
+  display: flex
+  justify-content: flex-start
+  align-items: center
+  flex-wrap: wrap
+
+.field__file-fake
+  display: flex
+  align-items: center
+  margin: 0 0 0 13px
+  color: #BEBEBE
+  font-size: 13px
+  font-weight: 500
+  font-family: 'Montserrat', sans-serif
+
+.field__file-button
+  transition: .3s ease
+  width: 144px
+  height: 43px
+  color: #fff
+  border-radius: 5px
+  display: flex
+  font-size: 13px
+  font-weight: 500
+  font-family: 'Montserrat', sans-serif
+  background: #7B7B7B
+  align-items: center
+  justify-content: center
+  cursor: pointer
+  &:hover
+    background: #a5a5a5
+
+//settings page
+.settings
+  h1
+    color: #A4A9AE
+  .list-checkbox
+    width: calc(100% - 303px)
+    li
+      padding: 0
+      margin: 0 0 8px
+      label
+        margin: 0
+        .label
+          color: #717171
+          font-size: 13px
+          font-family: 'Montserrat', sans-serif
+          font-weight: 500
+          line-height: normal
+      &:last-child
+        margin: 0
+
+      &:nth-child(odd)
+        background: transparent
+  .btn-group
+    justify-content: flex-end
+    margin: 38px 0 0
+    .btn
+      margin: 0 0 17px
+      &:last-child
+        margin: 0
+  .form
+    font-family: 'Montserrat', sans-serif
+
 
 
 @import "media"
