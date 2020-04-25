@@ -181,7 +181,7 @@ h1, .subtitle
 .bg-green
   background: #8CC152
 
-.bg-green
+.bg-grey
   background: #EBEBEB
 
 .color-red
@@ -536,7 +536,7 @@ header
     &:last-child
       margin: 0
 
-    a
+    a, span
       display: flex
       align-items: center
       justify-content: center
@@ -603,9 +603,11 @@ header
 
     .btn
       width: 141px
+  .table-responsive
+    margin: 0 0 30px
 
 .table-add-tender
-  margin: 0 0 30px
+  margin: 0 0 10px
   border-radius: 5px
   overflow: hidden
 
@@ -625,11 +627,11 @@ header
 
       .btn-delete
         width: 70px
-        height: 54px
+        height: 58px
 
       .btn-green
         width: 183px
-        height: 54px
+        height: 58px
         margin: 0
 
     tr
@@ -903,6 +905,8 @@ header
   align-items: flex-start
   flex-wrap: wrap
   padding: 25px 10px 240px
+  .row
+    flex-wrap: nowrap
 
   h3
     width: 100%
@@ -913,16 +917,18 @@ header
   .form-group
     display: flex
     align-items: center
-    width: 454px
+
 
     input
       background: transparent
 
-  .form-group__quantity
-    width: auto
 
-  .form-group__article
+  .auction-table__box
+    width: 454px
+
+  .auction-table__box-article
     width: 290px
+
 
 .row
   width: 100%
@@ -933,7 +939,7 @@ header
 
 
 .auction-table__box
-  margin: 0 30px 24px 0
+  margin: 0 20px 24px 0
   &:last-child
     margin-right: 0
 
@@ -1169,7 +1175,9 @@ header
     font-size: 16px
     width: 244px
     height: 48px
-    margin: 0
+    margin: 2px 2px 1px 0
+    &:last-child
+      margin: 2px 0 1px 0
   .p0
     padding: 0
   .btn-group

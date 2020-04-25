@@ -52,7 +52,13 @@
     &:last-child
       margin: 0 0 10px
 
+  .auction-table__body .row
+    flex-wrap: wrap
+    justify-content: space-between
 
+  .auction-table__body .auction-table__box
+    width: 47%
+    margin-right: 0
 
 @media only screen and (max-width : 1100px)
   .table-add-tender tbody tr td
@@ -93,8 +99,7 @@
   .auction-wrapper__box-one
     margin: 0 0 40px
 
-  .auction-table__body .form-group
-    width: 300px
+
 
   .table-customers-new
     .btn
@@ -120,6 +125,10 @@
   .registration-user .form-contract button
     margin: 17px 0 0 200px
 
+
+@media only screen and (max-width : 850px)
+  .auction-table__body .auction-table__box
+    width: 100%
 
 @media only screen and (max-width : 767px)
   .sidebar-close
@@ -187,6 +196,10 @@
     width: 100%
     li
       width: 100%
+
+  .field__file-fake
+    margin: 2px 0 0 0
+    width: 100%
 
 @media only screen and (max-width : 640px)
   .upcoming-tender .title-line .btn
@@ -267,3 +280,23 @@
 
   .table-customers-details tr td
     padding: 15px
+
+  .add-tender__content
+    .table-responsive
+      margin:  0 0 50px
+    .btn-group
+      .btn
+        width: 120px
+        font-size: 14px
+
+  .add-tender__content .table-responsive
+    margin: 0 0 30px
+    
+  .tabs__caption li
+    text-align: left
+    justify-content: flex-start
+    padding: 0 15px
+
+  .content-wrapper
+    padding: 30px 20px
+
